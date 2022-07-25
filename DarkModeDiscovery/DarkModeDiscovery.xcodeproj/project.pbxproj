@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E002B00D288E9A8700E46356 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E002B00C288E9A8700E46356 /* .swiftlint.yml */; };
+		E002B00F288E9A8D00E46356 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E002B00E288E9A8D00E46356 /* README.md */; };
+		E002B011288E9A9200E46356 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E002B010288E9A9200E46356 /* LICENSE */; };
+		E002B013288E9AAD00E46356 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E002B012288E9AAD00E46356 /* .gitignore */; };
 		E00F8383288A4A04000D0A01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F8382288A4A04000D0A01 /* ViewController.swift */; };
 		E00F8385288A4A0B000D0A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00F8384288A4A0B000D0A01 /* Assets.xcassets */; };
 		E00F8393288A4A0C000D0A01 /* DarkModeDiscoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F8392288A4A0C000D0A01 /* DarkModeDiscoveryTests.swift */; };
@@ -30,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E002B00C288E9A8700E46356 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
+		E002B00E288E9A8D00E46356 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E002B010288E9A9200E46356 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E002B012288E9AAD00E46356 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		E00F837D288A4A04000D0A01 /* DarkModeDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkModeDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00F8382288A4A04000D0A01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E00F8384288A4A0B000D0A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +74,10 @@
 		E00F8374288A4A04000D0A01 = {
 			isa = PBXGroup;
 			children = (
+				E002B012288E9AAD00E46356 /* .gitignore */,
+				E002B00C288E9A8700E46356 /* .swiftlint.yml */,
+				E002B010288E9A9200E46356 /* LICENSE */,
+				E002B00E288E9A8D00E46356 /* README.md */,
 				E00F837F288A4A04000D0A01 /* DarkModeDiscovery */,
 				E00F8391288A4A0C000D0A01 /* DarkModeDiscoveryTests */,
 				E00F837E288A4A04000D0A01 /* Products */,
@@ -132,6 +144,7 @@
 				E00F8379288A4A04000D0A01 /* Sources */,
 				E00F837A288A4A04000D0A01 /* Frameworks */,
 				E00F837B288A4A04000D0A01 /* Resources */,
+				E002B00B288E99B900E46356 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -203,7 +216,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E002B011288E9A9200E46356 /* LICENSE in Resources */,
+				E002B013288E9AAD00E46356 /* .gitignore in Resources */,
+				E002B00D288E9A8700E46356 /* .swiftlint.yml in Resources */,
 				E00F8385288A4A0B000D0A01 /* Assets.xcassets in Resources */,
+				E002B00F288E9A8D00E46356 /* README.md in Resources */,
 				E0A29350288E653800F467E8 /* MainMenu.xib in Resources */,
 				E0A29352288E657900F467E8 /* MainWindowController.storyboard in Resources */,
 			);
@@ -217,6 +234,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E002B00B288E99B900E46356 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# SwiftLint works.\n\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\nif which swiftlint >/dev/null; then\nswiftlint --config \"../.swiftlint.yml\"\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E00F8379288A4A04000D0A01 /* Sources */ = {

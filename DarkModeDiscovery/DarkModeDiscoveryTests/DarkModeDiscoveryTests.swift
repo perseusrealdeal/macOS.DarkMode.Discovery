@@ -17,4 +17,3 @@ final class DarkModeDiscoveryTests: XCTestCase {
         XCTFail("Tests not yet implemented in \(type(of: self)).")
     }
 }
-
