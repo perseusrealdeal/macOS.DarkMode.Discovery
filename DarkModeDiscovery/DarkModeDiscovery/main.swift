@@ -29,7 +29,7 @@ app.setActivationPolicy(.regular)
 mainMenu?.instantiate(withOwner: app, topLevelObjects: nil)
 screen?.window?.makeKeyAndOrderFront(nil)
 
-app.delegate = appDelegate as? any NSApplicationDelegate
+app.delegate = appDelegate as? NSApplicationDelegate
 
 app.activate(ignoringOtherApps: true)
 app.run()
