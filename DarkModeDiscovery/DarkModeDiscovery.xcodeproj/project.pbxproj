@@ -168,6 +168,8 @@
 			dependencies = (
 			);
 			name = DarkModeDiscovery;
+			packageProductDependencies = (
+			);
 			productName = DarkModeDiscovery;
 			productReference = E00F837D288A4A04000D0A01 /* DarkModeDiscovery.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +220,8 @@
 				Base,
 			);
 			mainGroup = E00F8374288A4A04000D0A01;
+			packageReferences = (
+			);
 			productRefGroup = E00F837E288A4A04000D0A01 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

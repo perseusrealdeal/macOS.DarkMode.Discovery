@@ -1,5 +1,5 @@
 //
-//  Member.swift, members.json
+//  Companion.swift, companions.json
 //  DarkModeDiscovery
 //
 //  Created by Mikhail Zhigulin in 7530.

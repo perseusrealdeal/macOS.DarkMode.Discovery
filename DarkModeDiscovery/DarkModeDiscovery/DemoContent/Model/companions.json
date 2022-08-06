@@ -93,14 +93,14 @@
     {
         "name"    : "Bilbo Baggins",
         "age"     : "50",
-        "race"    : "Dwarves",
+        "race"    : "Hobbits",
         "iconName": "Bilbo",
         "characteristics": "Bilbo Baggins was a Hobbit who lived in The Shire during the final years of the Third Age. His adventure with the dwarves Thorin and company earned him a fortune, and brought the One Ring of Sauron back into knowledge."
     },
     {
         "name"    : "Gandalf the Grey",
         "age"     : "5000+",
-        "race"    : "Dwarves",
+        "race"    : "Ainur",
         "iconName": "Gandalf",
         "characteristics": "Gandalf was one of the five Istari sent to Middle-earth by the Valar in the Third Age. In Valinor he was known as Olórin. Gandalf was instrumental in bringing about the demise of Sauron in T.A. 3019, chiefly by encouraging others and dispensing his wisdom at pivotal times. Gandalf was originally robed in grey, and second to Saruman in the Order of wizards. After his fall in Moria, Gandalf returned to Middle-earth as head of the Order, robed in white. Gandalf was noteworthy for his keen interest in Hobbits."
     }
