@@ -1,0 +1,107 @@
+[
+    {
+        "name"    : "Thorin Oakenshield",
+        "age"     : "195",
+        "race"    : "Dwarves",
+        "iconName": "Thorin",
+        "characteristics": "Thorin II, also known as Thorin Oakenshield, was the King of Durin's Folk from T.A. 2850 until his death in T.A. 2941, being the son of Thráin II, grandson of Thrór and older brother to Frerin and Dís. Thorin led Durin's Folk of the Blue Mountains during their time in exile. In T.A. 2941 he led the quest for Erebor accompanied by twelve Dwarves, Bilbo Baggins, and Gandalf the Grey; he briefly became King under the Mountain until he perished following the Battle of Five Armies."
+    },
+    {
+        "name"    : "Fili",
+        "age"     : "82",
+        "race"    : "Dwarves",
+        "iconName": "Fili",
+        "characteristics": "Fíli (T.A. 2859 – 2941, 82 years old) was one of the thirteen Dwarves who took part in the quest for Erebor, which was Bilbo Baggins's great adventure. He was one of the three Dwarves of Thorin's company who did not survive the Battle of Five Armies (the other two being his uncle Thorin and his brother Kíli.)"
+    },
+    {
+        "name"    : "Kili",
+        "age"     : "77",
+        "race"    : "Dwarves",
+        "iconName": "Kili",
+        "characteristics": "Kíli (T.A. 2864 – 2941[1] 77 years old) was the son of Dís, the sister of King Thorin, and brother of Fíli. Kíli was one of the thirteen Dwarves who took part in the quest for Erebor, which was Bilbo Baggins's great adventure. The brothers were the youngest of Thorin and Company by some 50 years, with Kíli being five years younger than his brother. The two brothers were inseparable throughout the adventure."
+    },
+    {
+        "name"    : "Oin",
+        "age"     : "167",
+        "race"    : "Dwarves",
+        "iconName": "Oin",
+        "characteristics": "Óin (T.A. 2774 - 2994, 220 years old) was one of the Dwarves of Thorin's company who set out to reclaim Erebor from Smaug. Later, he followed Balin in an ill-fated attempt to retake Moria."
+    },
+    {
+        "name"    : "Glóin",
+        "age"     : "158",
+        "race"    : "Dwarves",
+        "iconName": "Gloin",
+        "characteristics": "Glóin was a dwarf of Durin's Folk, the son of Gróin, the brother of Óin, and the father of Gimli of the Fellowship of the Ring. He is most famous as one of Thorin's companions on the quest to Erebor. 77 years after the Quest of Erebor, Glóin attended the Council of Elrond with his son Gimli, where the latter would represent dwarves in the Fellowship of the Ring"
+    },
+    {
+        "name"    : "Balin",
+        "age"     : "178",
+        "race"    : "Dwarves",
+        "iconName": "Balin",
+        "characteristics": "Balin was a Dwarven leader, the son of Fundin and elder brother of Dwalin and a member of Durin's Folk. He was one of the Dwarves that travelled with Bilbo Baggins and Gandalf to reclaim Erebor. When Bilbo first met Balin, the Dwarf was very old looking with a white beard and a red hood and would later become close friends with the hobbit."
+    },
+    {
+        "name"    : "Dwalin",
+        "age"     : "169",
+        "race"    : "Dwarves",
+        "iconName": "Dwalin",
+        "characteristics": "Dwalin (T.A. 2772 - Fo.A. 91) was a Dwarf of the House of Durin. Along with his brother, Balin, Dwalin was a member of Thorin's company in the Quest of Erebor, an attempt to reclaim the Lonely Mountain from the dragon Smaug. Dwalin survived the adventure and the subsequent Battle of Five Armies, and lived in rich in the Lonely Mountain well into the Fourth Age."
+    },
+    {
+        "name"    : "Ori",
+        "age"     : "Unknown",
+        "race"    : "Dwarves",
+        "iconName": "Ori",
+        "characteristics": "Ori was one of the thirteen Dwarves of Thorin's company who journeyed to Erebor to challenge the dragon Smaug. After the death of Smaug, Ori lived at the Lonely Mountain until he went to Moria as part of Balin's ill-fated attempt to re-take the ancient mansions of the Dwarves."
+    },
+    {
+        "name"    : "Dori",
+        "age"     : "Unknown",
+        "race"    : "Dwarves",
+        "iconName": "Dori",
+        "characteristics": "Dori was a Dwarf who, being of Durin's Folk, probably dwelt in the northern Blue Mountains with Thorin after the latter had settled there after Thráin II had disappeared. He was one of the thirteen Dwarves who journeyed to Erebor to reclaim the lands from the dragon Smaug, and after the successful conclusion of this quest he lived with his part of the treasure at the Lonely Mountain."
+    },
+    {
+        "name"    : "Nori",
+        "age"     : "Unknown",
+        "race"    : "Dwarves",
+        "iconName": "Nori",
+        "characteristics": "Nori was one of Durin's Folk and likely dwelt in the northern Blue Mountains with Thorin after the latter had settled there. He was one of the thirteen Dwarves of Thorin's company who journeyed to Erebor to challenge the dragon Smaug. After the death of Smaug, Nori lived with his share of the treasure at the Lonely Mountain."
+    },
+    {
+        "name"    : "Bifur",
+        "age"     : "Unknown",
+        "race"    : "Dwarves",
+        "iconName": "Bifur",
+        "characteristics": "Bifur most likely lived in the Blue Mountains with Thorin after the loss of Thráin II. Bifur was one of the thirteen Dwarves of Thorin's company who journeyed to Erebor to challenge the dragon Smaug. After the death of Smaug, Bifur lived at the Lonely Mountain."
+    },
+    {
+        "name"    : "Bofur",
+        "age"     : "Unknown",
+        "race"    : "Dwarves",
+        "iconName": "Bofur",
+        "characteristics": "Bofur most likely lived in the Blue Mountains with Thorin after the loss of Thráin II. Bofur was one of the thirteen Dwarves of Thorin's company who journeyed to Erebor to challenge the dragon Smaug. After the death of Smaug, Bofur lived at the Lonely Mountain in great wealth."
+    },
+    {
+        "name"    : "Bombur",
+        "age"     : "Unknown",
+        "race"    : "Dwarves",
+        "iconName": "Bombur",
+        "characteristics": "Bombur was one of the Dwarves of Thorin's company who journeyed to Erebor to challenge the dragon Smaug. Bombur's distinguishing characteristic was his size, for he was the fattest of the thirteen Dwarves. After the death of Smaug, Bombur lived at the Lonely Mountain."
+    },
+    {
+        "name"    : "Bilbo Baggins",
+        "age"     : "50",
+        "race"    : "Dwarves",
+        "iconName": "Bilbo",
+        "characteristics": "Bilbo Baggins was a Hobbit who lived in The Shire during the final years of the Third Age. His adventure with the dwarves Thorin and company earned him a fortune, and brought the One Ring of Sauron back into knowledge."
+    },
+    {
+        "name"    : "Gandalf the Grey",
+        "age"     : "5000+",
+        "race"    : "Dwarves",
+        "iconName": "Gandalf",
+        "characteristics": "Gandalf was one of the five Istari sent to Middle-earth by the Valar in the Third Age. In Valinor he was known as Olórin. Gandalf was instrumental in bringing about the demise of Sauron in T.A. 3019, chiefly by encouraging others and dispensing his wisdom at pivotal times. Gandalf was originally robed in grey, and second to Saruman in the Order of wizards. After his fall in Moria, Gandalf returned to Middle-earth as head of the Order, robed in white. Gandalf was noteworthy for his keen interest in Hobbits."
+    }
+]
