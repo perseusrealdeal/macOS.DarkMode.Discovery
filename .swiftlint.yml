@@ -1,2 +1,4 @@
+identifier_name:
+  validates_start_with_lowercase: false
 
 reporter: "xcode" # reporter type
