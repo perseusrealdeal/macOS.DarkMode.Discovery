@@ -197,15 +197,16 @@
 		E00F8375288A4A04000D0A01 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					E00F837C288A4A04000D0A01 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1340;
 					};
 					E00F838D288A4A0C000D0A01 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1340;
 						TestTargetID = E00F837C288A4A04000D0A01;
 					};
 				};
