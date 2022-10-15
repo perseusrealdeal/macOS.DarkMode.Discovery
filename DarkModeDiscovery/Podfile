@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+platform :macos, '10.10'
+use_frameworks! :linkage => :static
+
+def shared_pods
+  pod 'SwiftLint', '0.31.0'
+end
+
+target 'DarkModeDiscovery' do
+  # Pods for Weather
+  shared_pods
+  
+  target 'DarkModeDiscoveryTests' do
+    inherit! :search_paths
+    # Pods for testing only
+    
+  end
+end

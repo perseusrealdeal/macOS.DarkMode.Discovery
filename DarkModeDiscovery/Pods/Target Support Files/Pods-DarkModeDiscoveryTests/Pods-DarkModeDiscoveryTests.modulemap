@@ -1,0 +1,6 @@
+framework module Pods_DarkModeDiscoveryTests {
+  umbrella header "Pods-DarkModeDiscoveryTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

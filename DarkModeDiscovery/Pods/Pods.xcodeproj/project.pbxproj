@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2D5806BD548729410BC465E4BA98D9F5 /* Pods-DarkModeDiscovery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 700611DAE0BBA5EE20EDD70E84E4D73D /* Pods-DarkModeDiscovery-dummy.m */; };
+		6AFA90490364CE4DD7964EC9F685DA9C /* Pods-DarkModeDiscoveryTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 066E47A8DD802704E8FDCCC8D91050ED /* Pods-DarkModeDiscoveryTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76A9A580C1BCADF1B309D67D7FC316B6 /* Pods-DarkModeDiscovery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BABC262C677923F14EB56AFDBBAD88BA /* Pods-DarkModeDiscovery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82066A1D9BFDED61E0A917DD350A99E2 /* Pods-DarkModeDiscoveryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5D886E20278727CF49D143836E51E /* Pods-DarkModeDiscoveryTests-dummy.m */; };
+		D02CD9FD722BCB7E8DC95FED7D6E2480 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		D69AC2B183D63443DEB5566A48D664E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47962CCECB67239A24B49D2921EA4873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5675447D678ACC44BB1F004AD54D2A2;
+			remoteInfo = "Pods-DarkModeDiscovery";
+		};
+		5304E2D76B7A7E14BB23F19D77D9132D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		066E47A8DD802704E8FDCCC8D91050ED /* Pods-DarkModeDiscoveryTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DarkModeDiscoveryTests-umbrella.h"; sourceTree = "<group>"; };
+		1A88BC7C7E2333E44DD5AB9D94A66738 /* Pods-DarkModeDiscovery-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DarkModeDiscovery-acknowledgements.markdown"; sourceTree = "<group>"; };
+		264B9E765900CA663D66EA459E3B8D38 /* Pods-DarkModeDiscoveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkModeDiscoveryTests.release.xcconfig"; sourceTree = "<group>"; };
+		316E3C9FDF18FF92053398A24EA8D8AC /* Pods-DarkModeDiscoveryTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DarkModeDiscoveryTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		32C32B736D3F19CC7B240A6A0AFC60EA /* Pods-DarkModeDiscovery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkModeDiscovery.debug.xcconfig"; sourceTree = "<group>"; };
+		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		4A51F7C85B013A6FEF18C097F5011333 /* Pods-DarkModeDiscovery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkModeDiscovery.release.xcconfig"; sourceTree = "<group>"; };
+		4DE1C518B28C635BB99933601862B71B /* Pods-DarkModeDiscoveryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkModeDiscoveryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		68FCBA49612FEE890390659795326E1E /* Pods-DarkModeDiscoveryTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkModeDiscoveryTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		700611DAE0BBA5EE20EDD70E84E4D73D /* Pods-DarkModeDiscovery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DarkModeDiscovery-dummy.m"; sourceTree = "<group>"; };
+		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		9AD5D886E20278727CF49D143836E51E /* Pods-DarkModeDiscoveryTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DarkModeDiscoveryTests-dummy.m"; sourceTree = "<group>"; };
+		9AEB78757BCB71324D19921F635A1DE0 /* Pods-DarkModeDiscoveryTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DarkModeDiscoveryTests.modulemap"; sourceTree = "<group>"; };
+		9B26AB6E1B0F2725211990D30B53F3C6 /* Pods-DarkModeDiscovery-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkModeDiscovery-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BABC262C677923F14EB56AFDBBAD88BA /* Pods-DarkModeDiscovery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DarkModeDiscovery-umbrella.h"; sourceTree = "<group>"; };
+		C0DB779F23C1DAA42ECB9D447B111436 /* Pods-DarkModeDiscoveryTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkModeDiscoveryTests-Info.plist"; sourceTree = "<group>"; };
+		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C9B86ED250F24C24C8F07E7EFADE08B4 /* Pods-DarkModeDiscovery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DarkModeDiscovery.modulemap"; sourceTree = "<group>"; };
+		DD6FCA1C40AA3A9F2A5E78E9EFDB7198 /* Pods-DarkModeDiscoveryTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DarkModeDiscoveryTests"; path = Pods_DarkModeDiscoveryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06CF1CCFA649855DD662E2D88DED7A6 /* Pods-DarkModeDiscovery-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkModeDiscovery-Info.plist"; sourceTree = "<group>"; };
+		EAFA4A431F41CEAC24ECAB54C5926F37 /* Pods-DarkModeDiscovery */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DarkModeDiscovery"; path = Pods_DarkModeDiscovery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F0EEB4416F948DA4054AA3AA5344ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69AC2B183D63443DEB5566A48D664E6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20893BA1F937DF24E7B86AD6F3549A35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02CD9FD722BCB7E8DC95FED7D6E2480 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EE6A727F5A00B378B2AE7927DDD0886 /* Pods-DarkModeDiscoveryTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AEB78757BCB71324D19921F635A1DE0 /* Pods-DarkModeDiscoveryTests.modulemap */,
+				316E3C9FDF18FF92053398A24EA8D8AC /* Pods-DarkModeDiscoveryTests-acknowledgements.markdown */,
+				68FCBA49612FEE890390659795326E1E /* Pods-DarkModeDiscoveryTests-acknowledgements.plist */,
+				9AD5D886E20278727CF49D143836E51E /* Pods-DarkModeDiscoveryTests-dummy.m */,
+				C0DB779F23C1DAA42ECB9D447B111436 /* Pods-DarkModeDiscoveryTests-Info.plist */,
+				066E47A8DD802704E8FDCCC8D91050ED /* Pods-DarkModeDiscoveryTests-umbrella.h */,
+				4DE1C518B28C635BB99933601862B71B /* Pods-DarkModeDiscoveryTests.debug.xcconfig */,
+				264B9E765900CA663D66EA459E3B8D38 /* Pods-DarkModeDiscoveryTests.release.xcconfig */,
+			);
+			name = "Pods-DarkModeDiscoveryTests";
+			path = "Target Support Files/Pods-DarkModeDiscoveryTests";
+			sourceTree = "<group>";
+		};
+		5DAC070202C1E6F231AA8D0310AC6768 /* Pods-DarkModeDiscovery */ = {
+			isa = PBXGroup;
+			children = (
+				C9B86ED250F24C24C8F07E7EFADE08B4 /* Pods-DarkModeDiscovery.modulemap */,
+				1A88BC7C7E2333E44DD5AB9D94A66738 /* Pods-DarkModeDiscovery-acknowledgements.markdown */,
+				9B26AB6E1B0F2725211990D30B53F3C6 /* Pods-DarkModeDiscovery-acknowledgements.plist */,
+				700611DAE0BBA5EE20EDD70E84E4D73D /* Pods-DarkModeDiscovery-dummy.m */,
+				E06CF1CCFA649855DD662E2D88DED7A6 /* Pods-DarkModeDiscovery-Info.plist */,
+				BABC262C677923F14EB56AFDBBAD88BA /* Pods-DarkModeDiscovery-umbrella.h */,
+				32C32B736D3F19CC7B240A6A0AFC60EA /* Pods-DarkModeDiscovery.debug.xcconfig */,
+				4A51F7C85B013A6FEF18C097F5011333 /* Pods-DarkModeDiscovery.release.xcconfig */,
+			);
+			name = "Pods-DarkModeDiscovery";
+			path = "Target Support Files/Pods-DarkModeDiscovery";
+			sourceTree = "<group>";
+		};
+		7CF3F68AF8A815B5FC6FDF0B3A3F12C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFA4A431F41CEAC24ECAB54C5926F37 /* Pods-DarkModeDiscovery */,
+				DD6FCA1C40AA3A9F2A5E78E9EFDB7198 /* Pods-DarkModeDiscoveryTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
+				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		94091C1550CEA128B9489603F770983E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DAC070202C1E6F231AA8D0310AC6768 /* Pods-DarkModeDiscovery */,
+				2EE6A727F5A00B378B2AE7927DDD0886 /* Pods-DarkModeDiscoveryTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
+				7CF3F68AF8A815B5FC6FDF0B3A3F12C7 /* Products */,
+				94091C1550CEA128B9489603F770983E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5CA70B684EA54192CE1E8B1B384B3505 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFA90490364CE4DD7964EC9F685DA9C /* Pods-DarkModeDiscoveryTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55D57ACAAA18323F1E09FBD71C11647 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A9A580C1BCADF1B309D67D7FC316B6 /* Pods-DarkModeDiscovery-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C8881E972BA477539D501870E19A6243 /* Pods-DarkModeDiscoveryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0433FA240A0D577B03969110705AF004 /* Build configuration list for PBXNativeTarget "Pods-DarkModeDiscoveryTests" */;
+			buildPhases = (
+				5CA70B684EA54192CE1E8B1B384B3505 /* Headers */,
+				55009A6E46A937AF8382A4B034DF2DBC /* Sources */,
+				1F0EEB4416F948DA4054AA3AA5344ECF /* Frameworks */,
+				C27EE75D7C30B408B6DCEA4BBA133CCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				928DD8B0D30DFAD3C64ACD1595DC086B /* PBXTargetDependency */,
+			);
+			name = "Pods-DarkModeDiscoveryTests";
+			productName = Pods_DarkModeDiscoveryTests;
+			productReference = DD6FCA1C40AA3A9F2A5E78E9EFDB7198 /* Pods-DarkModeDiscoveryTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5675447D678ACC44BB1F004AD54D2A2 /* Pods-DarkModeDiscovery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F1F253361E77C76D80C0A30524B466 /* Build configuration list for PBXNativeTarget "Pods-DarkModeDiscovery" */;
+			buildPhases = (
+				A55D57ACAAA18323F1E09FBD71C11647 /* Headers */,
+				E70B70DD3C083668BE2B58C35611BBAE /* Sources */,
+				20893BA1F937DF24E7B86AD6F3549A35 /* Frameworks */,
+				D41C2662CEE904D1EA1624EA00AD4803 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66762572F20A26C18BD1FEA5B6E7BF1C /* PBXTargetDependency */,
+			);
+			name = "Pods-DarkModeDiscovery";
+			productName = Pods_DarkModeDiscovery;
+			productReference = EAFA4A431F41CEAC24ECAB54C5926F37 /* Pods-DarkModeDiscovery */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7CF3F68AF8A815B5FC6FDF0B3A3F12C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5675447D678ACC44BB1F004AD54D2A2 /* Pods-DarkModeDiscovery */,
+				C8881E972BA477539D501870E19A6243 /* Pods-DarkModeDiscoveryTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C27EE75D7C30B408B6DCEA4BBA133CCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41C2662CEE904D1EA1624EA00AD4803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55009A6E46A937AF8382A4B034DF2DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82066A1D9BFDED61E0A917DD350A99E2 /* Pods-DarkModeDiscoveryTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E70B70DD3C083668BE2B58C35611BBAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5806BD548729410BC465E4BA98D9F5 /* Pods-DarkModeDiscovery-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66762572F20A26C18BD1FEA5B6E7BF1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 5304E2D76B7A7E14BB23F19D77D9132D /* PBXContainerItemProxy */;
+		};
+		928DD8B0D30DFAD3C64ACD1595DC086B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DarkModeDiscovery";
+			target = F5675447D678ACC44BB1F004AD54D2A2 /* Pods-DarkModeDiscovery */;
+			targetProxy = 47962CCECB67239A24B49D2921EA4873 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15C1B3C8A559F84C783BB022AE3837F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C32B736D3F19CC7B240A6A0AFC60EA /* Pods-DarkModeDiscovery.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkModeDiscovery/Pods-DarkModeDiscovery-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkModeDiscovery/Pods-DarkModeDiscovery.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		16F37D961BD142A847EE7A8BCECC4D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		52D5E6CC7CC6377A5FEE0FDB36E71525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		59B0046A06F12F76D4A18955F338E0E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A51F7C85B013A6FEF18C097F5011333 /* Pods-DarkModeDiscovery.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkModeDiscovery/Pods-DarkModeDiscovery-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkModeDiscovery/Pods-DarkModeDiscovery.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6DCD5022610C7299CA6931E1B3946FFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264B9E765900CA663D66EA459E3B8D38 /* Pods-DarkModeDiscoveryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkModeDiscoveryTests/Pods-DarkModeDiscoveryTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkModeDiscoveryTests/Pods-DarkModeDiscoveryTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83C3234BEBF81359D2523064DDDB2364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C6B609D88380AE3C2B0C1E098CBB4CD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE1C518B28C635BB99933601862B71B /* Pods-DarkModeDiscoveryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkModeDiscoveryTests/Pods-DarkModeDiscoveryTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkModeDiscoveryTests/Pods-DarkModeDiscoveryTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA2D0F02AEA8374CDABB0ABDFE0927D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0433FA240A0D577B03969110705AF004 /* Build configuration list for PBXNativeTarget "Pods-DarkModeDiscoveryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B609D88380AE3C2B0C1E098CBB4CD4 /* Debug */,
+				6DCD5022610C7299CA6931E1B3946FFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C3234BEBF81359D2523064DDDB2364 /* Debug */,
+				16F37D961BD142A847EE7A8BCECC4D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50F1F253361E77C76D80C0A30524B466 /* Build configuration list for PBXNativeTarget "Pods-DarkModeDiscovery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C1B3C8A559F84C783BB022AE3837F3 /* Debug */,
+				59B0046A06F12F76D4A18955F338E0E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2D0F02AEA8374CDABB0ABDFE0927D9 /* Debug */,
+				52D5E6CC7CC6377A5FEE0FDB36E71525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
