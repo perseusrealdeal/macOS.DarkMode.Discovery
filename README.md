@@ -1,3 +1,8 @@
+# Discovery project for Dark Mode
+[![Platform macOS](https://img.shields.io/badge/platform-macOS-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
+[![Xcode 10.1](https://img.shields.io/badge/Xcode-10.1+-red.svg)](https://en.wikipedia.org/wiki/Xcode)
+[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-red.svg)](https://docs.swift.org/swift-book/RevisionHistory/RevisionHistory.html)
+
 # Requirements
 1. Xcode 10.1+ (Swift 4.2)
 2. Cocoapods 1.11.3+
