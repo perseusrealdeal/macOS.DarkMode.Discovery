@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		15C29F1309245C8B83C92F33 /* Pods_DarkModeDiscoveryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68BEBE23432367F72CF8C15 /* Pods_DarkModeDiscoveryTests.framework */; };
 		20FCC9767A3C8C2C84DF77AB /* Pods_DarkModeDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E041FF067A0F2F4BE758384E /* Pods_DarkModeDiscovery.framework */; };
-		E002B00D288E9A8700E46356 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E002B00C288E9A8700E46356 /* .swiftlint.yml */; };
+		4B1E59EA28FBBC90006146E8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E59E928FBBC90006146E8 /* .swiftlint.yml */; };
 		E002B00F288E9A8D00E46356 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E002B00E288E9A8D00E46356 /* README.md */; };
 		E002B011288E9A9200E46356 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E002B010288E9A9200E46356 /* LICENSE */; };
 		E002B013288E9AAD00E46356 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E002B012288E9AAD00E46356 /* .gitignore */; };
@@ -41,10 +41,10 @@
 /* Begin PBXFileReference section */
 		123C3988502122C2B496E2E6 /* Pods-DarkModeDiscovery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkModeDiscovery.debug.xcconfig"; path = "Target Support Files/Pods-DarkModeDiscovery/Pods-DarkModeDiscovery.debug.xcconfig"; sourceTree = "<group>"; };
 		1DDD0F2DE3010151AC62A556 /* Pods-DarkModeDiscovery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkModeDiscovery.release.xcconfig"; path = "Target Support Files/Pods-DarkModeDiscovery/Pods-DarkModeDiscovery.release.xcconfig"; sourceTree = "<group>"; };
+		4B1E59E928FBBC90006146E8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = DarkModeDiscovery/.swiftlint.yml; sourceTree = "<group>"; };
 		4B55925828F7422400D38256 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D650776E188630666E5215B /* Pods-DarkModeDiscoveryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkModeDiscoveryTests.debug.xcconfig"; path = "Target Support Files/Pods-DarkModeDiscoveryTests/Pods-DarkModeDiscoveryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E0D47A8CF9C05D30BBF5B73 /* Pods-DarkModeDiscoveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkModeDiscoveryTests.release.xcconfig"; path = "Target Support Files/Pods-DarkModeDiscoveryTests/Pods-DarkModeDiscoveryTests.release.xcconfig"; sourceTree = "<group>"; };
-		E002B00C288E9A8700E46356 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
 		E002B00E288E9A8D00E46356 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E002B010288E9A9200E46356 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E002B012288E9AAD00E46356 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E002B012288E9AAD00E46356 /* .gitignore */,
-				E002B00C288E9A8700E46356 /* .swiftlint.yml */,
+				4B1E59E928FBBC90006146E8 /* .swiftlint.yml */,
 				E002B010288E9A9200E46356 /* LICENSE */,
 				E002B00E288E9A8D00E46356 /* README.md */,
 				E00F837F288A4A04000D0A01 /* DarkModeDiscovery */,
@@ -270,9 +270,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1E59EA28FBBC90006146E8 /* .swiftlint.yml in Resources */,
 				E002B011288E9A9200E46356 /* LICENSE in Resources */,
 				E002B013288E9AAD00E46356 /* .gitignore in Resources */,
-				E002B00D288E9A8700E46356 /* .swiftlint.yml in Resources */,
 				E00F8385288A4A0B000D0A01 /* Assets.xcassets in Resources */,
 				E002B00F288E9A8D00E46356 /* README.md in Resources */,
 				E0A29350288E653800F467E8 /* MainMenu.xib in Resources */,
