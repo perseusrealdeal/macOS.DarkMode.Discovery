@@ -16,8 +16,6 @@ enum Race: String, Decodable {
     case hobbits
     case ainur
     case dwarves
-    case elves
-    case men
 
     /// The one of the race.
     var single: String {
@@ -28,10 +26,6 @@ enum Race: String, Decodable {
             return "wizard"
         case .dwarves:
             return "dwarf"
-        case .elves:
-            return "elf"
-        case .men:
-            return "human"
         }
     }
 }
