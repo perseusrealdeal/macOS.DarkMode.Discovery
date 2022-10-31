@@ -16,7 +16,7 @@ import XCTest
 @objc(TestingAppDelegate)
 class TestingAppDelegate: NSResponder, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        print("<< Launching with testing app delegate")
+        print("<< Launching with testing matter purpose")
         print("<< \(type(of: self)) " + #function)
     }
 }
