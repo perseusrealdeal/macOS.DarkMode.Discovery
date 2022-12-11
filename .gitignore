@@ -47,6 +47,3 @@ Package.resolved
 .swiftpm
 
 .build/
-
-# Resolves conflict between swift package manager versions in Xcode 13
-DiscoveryProject/DarkModeDiscovery.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
