@@ -21,10 +21,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         #endif
     }
 
+/*
     func applicationWillTerminate(_ aNotification: Notification) {
 
     }
-/*
+
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
     }
