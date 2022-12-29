@@ -57,7 +57,7 @@
         <!--General-->
         <scene sceneID="zYJ-So-2PA">
             <objects>
-                <viewController title="General" id="2G3-pC-M2U" customClass="PreferencesViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="General" id="2G3-pC-M2U" customClass="GeneralPreferencesVC" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="5RK-HS-UFI">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="228"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -88,6 +88,9 @@
                                                     <segment label="Dark" width="65" selected="YES" tag="1"/>
                                                     <segment label="Auto" width="65"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="segmentedControlValueChanged:" target="2G3-pC-M2U" id="l1m-1g-xNa"/>
+                                                </connections>
                                             </segmentedCell>
                                         </segmentedControl>
                                     </subviews>
@@ -95,6 +98,10 @@
                             </box>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="9E1-6F-RRP" id="qBA-yd-Mz7"/>
+                        <outlet property="segmentedControlValueChanged" destination="9E1-6F-RRP" id="bfK-dV-dyx"/>
+                    </connections>
                 </viewController>
                 <customObject id="em9-f4-Owv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,7 @@
 		4B0158E629103C0D009F1803 /* DarkModeDiscoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0158E529103C0D009F1803 /* DarkModeDiscoveryTests.swift */; };
 		4B0158ED29103C21009F1803 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F83AD288A6F99000D0A01 /* TestingAppDelegate.swift */; };
 		4B1E59EA28FBBC90006146E8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E59E928FBBC90006146E8 /* .swiftlint.yml */; };
+		4B26073D295DC238002813C6 /* GeneralPreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B26073C295DC238002813C6 /* GeneralPreferencesVC.swift */; };
 		4B44EDFB294661E80084C192 /* main.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B44EDFA294661E80084C192 /* main.yml */; };
 		4B44EE0129466A320084C192 /* DarkModeSwitching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */; };
 		4B44EE0229466A320084C192 /* PerseusDarkModeSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EDFF29466A320084C192 /* PerseusDarkModeSingle.swift */; };
@@ -48,6 +49,7 @@
 		4B0158E529103C0D009F1803 /* DarkModeDiscoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeDiscoveryTests.swift; sourceTree = "<group>"; };
 		4B0158E729103C0D009F1803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B1E59E928FBBC90006146E8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = DarkModeDiscovery/.swiftlint.yml; sourceTree = "<group>"; };
+		4B26073C295DC238002813C6 /* GeneralPreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesVC.swift; sourceTree = "<group>"; };
 		4B44EDFA294661E80084C192 /* main.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.yml; path = ../.github/workflows/main.yml; sourceTree = "<group>"; };
 		4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkModeSwitching.swift; sourceTree = "<group>"; };
 		4B44EDFF29466A320084C192 /* PerseusDarkModeSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerseusDarkModeSingle.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				4B6A98B5295C83E100965FAF /* Preferences.storyboard */,
 				4B6A98B7295CADCA00965FAF /* PreferencesViewController.swift */,
 				4B6A98B9295CAF3400965FAF /* PreferencesWindowController.swift */,
+				4B26073C295DC238002813C6 /* GeneralPreferencesVC.swift */,
 			);
 			path = Preferences;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				4B6A98BB295CAF3400965FAF /* PreferencesWindowController.swift in Sources */,
 				E00F8383288A4A04000D0A01 /* ViewController.swift in Sources */,
 				E00F83AC288A4A64000D0A01 /* main.swift in Sources */,
+				4B26073D295DC238002813C6 /* GeneralPreferencesVC.swift in Sources */,
 				E0A29354288E70B200F467E8 /* AppDelegate.swift in Sources */,
 				E0A2934C288E520000F467E8 /* MainWindowController.swift in Sources */,
 				4B6A98B8295CADCA00965FAF /* PreferencesViewController.swift in Sources */,
