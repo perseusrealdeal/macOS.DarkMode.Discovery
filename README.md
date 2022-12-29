@@ -1,4 +1,4 @@
-# Discovery project for Dark Mode
+# macos.darkmode.discovery
 
 [![Actions Status](https://github.com/perseusrealdeal/macos.darkmode.discovery/actions/workflows/main.yml/badge.svg)](https://github.com/perseusrealdeal/macos.darkmode.discovery/actions)
 [![Platform macOS](https://img.shields.io/badge/platform-macOS-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
@@ -10,6 +10,10 @@
 [![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-1.1.2-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode/tree/1.1.2)
 [![PerseusUISystemKit](http://img.shields.io/:PerseusUISystemKit-1.1.1-green.svg)](https://github.com/perseusrealdeal/PerseusUISystemKit/tree/1.1.1)
 
+# In brief
+
+This project is used to prove a set of Perseus Dark Mode capabilities.
+
 # Requirements
 
 - Xcode 10.1+ (macOS High Sierra - 10.13.6)
@@ -18,8 +22,8 @@
 
 # First-party software
 
-- [Perseus Dark Mode](https://github.com/perseusrealdeal/PerseusDarkMode.git)
-- [Perseus UI System Kit](https://github.com/perseusrealdeal/PerseusUISystemKit.git)
+- [Perseus Dark Mode](https://github.com/perseusrealdeal/PerseusDarkMode.git) / [1.1.2](https://github.com/perseusrealdeal/perseusdarkmode/releases/tag/1.1.2)
+- [Perseus UI System Kit](https://github.com/perseusrealdeal/PerseusUISystemKit.git) / [1.1.1](https://github.com/perseusrealdeal/perseusuisystemkit/releases/tag/1.1.1)
 - [Dark Mode switching functions](https://gist.github.com/perseusrealdeal/11b1bab47f13134832b859f49d9af706)
 
 # Third-party software
