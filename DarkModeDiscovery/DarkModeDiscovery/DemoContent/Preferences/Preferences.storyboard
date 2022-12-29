@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="VHw-gu-uhd">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="plz-Dn-1Nb">
+            <objects>
+                <windowController id="VHw-gu-uhd" customClass="PreferencesWindowController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="dQe-r5-h6F">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="163" y="199" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+                        <connections>
+                            <outlet property="delegate" destination="VHw-gu-uhd" id="x67-Fn-1td"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="bEF-YE-Gq7" kind="relationship" relationship="window.shadowedContentViewController" id="hjG-U6-vtA"/>
+                    </connections>
+                </windowController>
+                <customObject id="Foj-6z-ksK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="-148"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="zbM-gc-sDJ">
+            <objects>
+                <tabViewController tabStyle="toolbar" id="bEF-YE-Gq7" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem identifier="" image="NSInfo" id="prl-F8-0KV"/>
+                        <tabViewItem identifier="" image="NSAdvanced" id="ule-h2-pwi"/>
+                    </tabViewItems>
+                    <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
+                    <tabView key="tabView" type="noTabsNoBorder" id="snC-pm-NgX">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="bEF-YE-Gq7" id="rXj-a8-Ooc"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="snC-pm-NgX" id="guE-yt-ok4"/>
+                        <segue destination="2G3-pC-M2U" kind="relationship" relationship="tabItems" id="ren-Qb-eL9"/>
+                        <segue destination="UCR-eO-0We" kind="relationship" relationship="tabItems" id="7In-7L-jqc"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="aBz-YS-jLj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="313"/>
+        </scene>
+        <!--General-->
+        <scene sceneID="zYJ-So-2PA">
+            <objects>
+                <viewController title="General" id="2G3-pC-M2U" customClass="PreferencesViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="5RK-HS-UFI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="140"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="em9-f4-Owv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1326" y="-10"/>
+        </scene>
+        <!--Advanced-->
+        <scene sceneID="q6p-YM-snG">
+            <objects>
+                <viewController title="Advanced" id="UCR-eO-0We" customClass="PreferencesViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Nh3-Wv-0Im">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="201"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="bfs-vV-JVx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1326" y="218.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSAdvanced" width="32" height="32"/>
+        <image name="NSInfo" width="32" height="32"/>
+    </resources>
+</document>
