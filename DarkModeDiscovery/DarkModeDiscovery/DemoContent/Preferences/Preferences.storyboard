@@ -59,13 +59,46 @@
             <objects>
                 <viewController title="General" id="2G3-pC-M2U" customClass="PreferencesViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="5RK-HS-UFI">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="140"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="228"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-uj-olC">
+                                <rect key="frame" x="20" y="148" width="410" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" ambiguous="YES" id="iaV-jv-KXw">
+                                    <rect key="frame" x="1" y="1" width="408" height="58"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSM-KD-vHI">
+                                            <rect key="frame" x="79" y="21" width="81" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Appearance:" id="Upi-Hs-bZ9">
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9E1-6F-RRP">
+                                            <rect key="frame" x="172" y="19" width="200" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="roundRect" trackingMode="selectOne" id="lmg-4Q-6Wl">
+                                                <font key="font" metaFont="cellTitle"/>
+                                                <segments>
+                                                    <segment label="Light" width="65"/>
+                                                    <segment label="Dark" width="65" selected="YES" tag="1"/>
+                                                    <segment label="Auto" width="65"/>
+                                                </segments>
+                                            </segmentedCell>
+                                        </segmentedControl>
+                                    </subviews>
+                                </view>
+                            </box>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="em9-f4-Owv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1326" y="-10"/>
+            <point key="canvasLocation" x="1326" y="34"/>
         </scene>
         <!--Advanced-->
         <scene sceneID="q6p-YM-snG">
@@ -78,7 +111,7 @@
                 </viewController>
                 <customObject id="bfs-vV-JVx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1326" y="218.5"/>
+            <point key="canvasLocation" x="1326" y="321"/>
         </scene>
     </scenes>
     <resources>
