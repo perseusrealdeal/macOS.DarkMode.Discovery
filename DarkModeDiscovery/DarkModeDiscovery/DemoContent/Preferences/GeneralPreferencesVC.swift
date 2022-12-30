@@ -17,10 +17,7 @@ class GeneralPreferencesVC: NSViewController {
     @IBOutlet weak var segmentedControl: NSSegmentedControl!
 
     @IBAction func segmentedControlValueChanged(_ sender: NSSegmentedCell) {
-        let index = sender.selectedSegment
-        guard index >= 0, index <= 2 else { return }
-
-        changeDarkModeValue(selected: index)
+        changeDarkModeValue(selected: sender.selectedSegment)
     }
 
     override func viewDidLoad() {

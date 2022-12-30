@@ -14,6 +14,17 @@ import Cocoa
 
 class MainWindowController: NSWindowController {
 
+    private lazy var preferencesController = { () -> NSWindowController in
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Preferences"), bundle: nil)
+        let screen = storyboard.instantiateInitialController() as? NSWindowController
+
+        return screen ?? NSWindowController()
+    }()
+
+    @IBAction func showPreferences(_ sender: NSMenuItem) {
+        preferencesController.showWindow(sender)
+    }
+
     override func windowDidLoad() {
         super.windowDidLoad()
 

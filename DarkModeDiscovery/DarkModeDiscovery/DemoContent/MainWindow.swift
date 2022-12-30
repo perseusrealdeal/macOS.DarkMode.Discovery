@@ -12,21 +12,4 @@
 
 import Cocoa
 
-class MainWindow: NSWindow {
-
-    var preferencesController: NSWindowController?
-
-    @IBAction func showPreferences(_ sender: Any) {
-        if !(preferencesController != nil) {
-            let storyboard = NSStoryboard(name: NSStoryboard.Name("Preferences"),
-                                          bundle: nil)
-
-            preferencesController = storyboard.instantiateInitialController()
-                as? NSWindowController
-        }
-
-        if preferencesController != nil {
-            preferencesController!.showWindow(sender)
-        }
-    }
-}
+class MainWindow: NSWindow { }
