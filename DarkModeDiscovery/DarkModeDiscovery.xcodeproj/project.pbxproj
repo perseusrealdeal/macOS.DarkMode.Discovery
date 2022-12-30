@@ -16,8 +16,8 @@
 		4B44EE0229466A320084C192 /* PerseusDarkModeSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EDFF29466A320084C192 /* PerseusDarkModeSingle.swift */; };
 		4B44EE0329466A320084C192 /* PerseusUISystemKitSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */; };
 		4B6A98B6295C83E100965FAF /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A98B5295C83E100965FAF /* Preferences.storyboard */; };
-		4B6A98B8295CADCA00965FAF /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A98B7295CADCA00965FAF /* PreferencesViewController.swift */; };
-		4B6A98BB295CAF3400965FAF /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A98B9295CAF3400965FAF /* PreferencesWindowController.swift */; };
+		4B6A98B8295CADCA00965FAF /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A98B7295CADCA00965FAF /* PreferencesVC.swift */; };
+		4B6A98BB295CAF3400965FAF /* PreferencesWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A98B9295CAF3400965FAF /* PreferencesWC.swift */; };
 		E002B00F288E9A8D00E46356 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E002B00E288E9A8D00E46356 /* README.md */; };
 		E002B011288E9A9200E46356 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E002B010288E9A9200E46356 /* LICENSE */; };
 		E002B013288E9AAD00E46356 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E002B012288E9AAD00E46356 /* .gitignore */; };
@@ -56,8 +56,8 @@
 		4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerseusUISystemKitSingle.swift; sourceTree = "<group>"; };
 		4B55925828F7422400D38256 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B6A98B5295C83E100965FAF /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
-		4B6A98B7295CADCA00965FAF /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
-		4B6A98B9295CAF3400965FAF /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		4B6A98B7295CADCA00965FAF /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
+		4B6A98B9295CAF3400965FAF /* PreferencesWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWC.swift; sourceTree = "<group>"; };
 		E002B00E288E9A8D00E46356 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E002B010288E9A9200E46356 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E002B012288E9AAD00E46356 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				4B6A98B5295C83E100965FAF /* Preferences.storyboard */,
-				4B6A98B7295CADCA00965FAF /* PreferencesViewController.swift */,
-				4B6A98B9295CAF3400965FAF /* PreferencesWindowController.swift */,
+				4B6A98B7295CADCA00965FAF /* PreferencesVC.swift */,
+				4B6A98B9295CAF3400965FAF /* PreferencesWC.swift */,
 				4B26073C295DC238002813C6 /* GeneralPreferencesVC.swift */,
 			);
 			path = Preferences;
@@ -356,13 +356,13 @@
 				E06FED13289A86ED00538B55 /* Race.swift in Sources */,
 				E01D2D3A289A76A6009B932F /* Companion.swift in Sources */,
 				4B44EE0329466A320084C192 /* PerseusUISystemKitSingle.swift in Sources */,
-				4B6A98BB295CAF3400965FAF /* PreferencesWindowController.swift in Sources */,
+				4B6A98BB295CAF3400965FAF /* PreferencesWC.swift in Sources */,
 				E00F8383288A4A04000D0A01 /* ViewController.swift in Sources */,
 				E00F83AC288A4A64000D0A01 /* main.swift in Sources */,
 				4B26073D295DC238002813C6 /* GeneralPreferencesVC.swift in Sources */,
 				E0A29354288E70B200F467E8 /* AppDelegate.swift in Sources */,
 				E0A2934C288E520000F467E8 /* MainWindowController.swift in Sources */,
-				4B6A98B8295CADCA00965FAF /* PreferencesViewController.swift in Sources */,
+				4B6A98B8295CADCA00965FAF /* PreferencesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

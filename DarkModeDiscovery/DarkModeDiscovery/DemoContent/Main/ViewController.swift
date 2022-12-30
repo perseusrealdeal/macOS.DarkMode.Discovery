@@ -14,6 +14,14 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    private lazy var members: [Companion] = {
+        guard let fileURL = Bundle.main.url(forResource: "companions", withExtension: "json"),
+            let data = try? Data(contentsOf: fileURL)
+            else { return [] }
+
+        return (try? JSONDecoder().decode([Companion].self, from: data)) ?? []
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
