@@ -134,6 +134,18 @@
 			path = Preferences;
 			sourceTree = "<group>";
 		};
+		4BD028FE295EF05800E294E9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E0A2934B288E520000F467E8 /* MainWindowController.swift */,
+				E0A2934D288E529600F467E8 /* MainWindow.swift */,
+				E00F8382288A4A04000D0A01 /* ViewController.swift */,
+				E0A2934F288E653800F467E8 /* MainMenu.xib */,
+				E0A29351288E657900F467E8 /* MainWindowController.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		E00F8374288A4A04000D0A01 = {
 			isa = PBXGroup;
 			children = (
@@ -182,12 +194,8 @@
 		E0A2934A288E517800F467E8 /* DemoContent */ = {
 			isa = PBXGroup;
 			children = (
+				4BD028FE295EF05800E294E9 /* Main */,
 				4B6A98B4295C7EB800965FAF /* Preferences */,
-				E0A2934B288E520000F467E8 /* MainWindowController.swift */,
-				E0A2934D288E529600F467E8 /* MainWindow.swift */,
-				E00F8382288A4A04000D0A01 /* ViewController.swift */,
-				E0A2934F288E653800F467E8 /* MainMenu.xib */,
-				E0A29351288E657900F467E8 /* MainWindowController.storyboard */,
 				E0A9D8B32895996100B78B21 /* Model */,
 			);
 			path = DemoContent;
