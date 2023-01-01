@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zEn-H0-fel">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zEn-H0-fel">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21179.7"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,13 +10,13 @@
         <scene sceneID="MXA-Sv-x0g">
             <objects>
                 <windowController id="zEn-H0-fel" customClass="MainWindowController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="t5D-0x-IF4" customClass="MainWindow" customModule="DarkModeDiscovery" customModuleProvider="target">
+                    <window key="window" title="macos.darkmode.discovery" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="t5D-0x-IF4" customClass="MainWindow" customModule="DarkModeDiscovery" customModuleProvider="target">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="245" y="301" width="480" height="270"/>
+                        <rect key="contentRect" x="99" y="99" width="480" height="500"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
+                        <value key="minSize" type="size" width="480" height="500"/>
                         <view key="contentView" id="GXa-t6-a7S">
-                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="500"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </view>
                         <connections>
@@ -36,13 +36,80 @@
             <objects>
                 <viewController id="7gf-Pr-xKH" customClass="ViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Js5-NT-0eg">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="362"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W1y-Yg-7SQ">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="362"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="fsn-lW-vd0">
+                                        <rect key="frame" x="0.0" y="212" width="480" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="N4C-2M-ONU"/>
+                                        </constraints>
+                                    </customView>
+                                    <splitView dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InQ-If-RaF">
+                                        <rect key="frame" x="0.0" y="108" width="480" height="96"/>
+                                        <subviews>
+                                            <customView id="sI7-eW-6Hx">
+                                                <rect key="frame" x="0.0" y="0.0" width="242" height="96"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="2VG-au-wOd"/>
+                                                </constraints>
+                                            </customView>
+                                            <customView id="7un-EE-Pwx">
+                                                <rect key="frame" x="243" y="0.0" width="237" height="96"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="YAF-he-pa7"/>
+                                                </constraints>
+                                            </customView>
+                                        </subviews>
+                                        <holdingPriorities>
+                                            <real value="250"/>
+                                            <real value="250"/>
+                                        </holdingPriorities>
+                                    </splitView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="358-qv-vDO">
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="srS-lh-g31"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fsn-lW-vd0" firstAttribute="width" secondItem="W1y-Yg-7SQ" secondAttribute="width" id="1t9-rE-7VR"/>
+                                    <constraint firstItem="358-qv-vDO" firstAttribute="width" secondItem="W1y-Yg-7SQ" secondAttribute="width" id="i4U-xX-cKq"/>
+                                    <constraint firstItem="InQ-If-RaF" firstAttribute="width" secondItem="W1y-Yg-7SQ" secondAttribute="width" id="nTJ-um-Xdy"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="W1y-Yg-7SQ" secondAttribute="trailing" id="2fB-Ba-Rvd"/>
+                            <constraint firstItem="W1y-Yg-7SQ" firstAttribute="leading" secondItem="Js5-NT-0eg" secondAttribute="leading" id="7rF-cs-d5x"/>
+                            <constraint firstAttribute="bottom" secondItem="W1y-Yg-7SQ" secondAttribute="bottom" id="WPL-fI-YOS"/>
+                            <constraint firstItem="W1y-Yg-7SQ" firstAttribute="top" secondItem="Js5-NT-0eg" secondAttribute="top" id="qhV-yh-ZiG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leftSplitWidthConstraint" destination="2VG-au-wOd" id="1qX-nO-8R3"/>
+                        <outlet property="splitView" destination="InQ-If-RaF" id="yXO-Mz-qUO"/>
+                    </connections>
                 </viewController>
                 <customObject id="I6A-oT-e1w" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-126" y="125"/>
+            <point key="canvasLocation" x="-126" y="395"/>
         </scene>
     </scenes>
 </document>

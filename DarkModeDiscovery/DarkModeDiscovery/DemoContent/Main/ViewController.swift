@@ -14,6 +14,9 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var splitView: NSSplitView!
+    @IBOutlet weak var leftSplitWidthConstraint: NSLayoutConstraint!
+
     private lazy var members: [Companion] = {
         guard let fileURL = Bundle.main.url(forResource: "companions", withExtension: "json"),
             let data = try? Data(contentsOf: fileURL)
@@ -25,12 +28,15 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let width = leftSplitWidthConstraint.constant
+        splitView.setPosition(width, ofDividerAt: 0)
+
+        representedObject = members
     }
 
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            print(#function)
         }
     }
 }
