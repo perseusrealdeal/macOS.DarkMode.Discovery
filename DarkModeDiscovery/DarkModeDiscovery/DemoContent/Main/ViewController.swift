@@ -17,7 +17,17 @@ class ViewController: NSViewController {
     @IBOutlet weak var splitView: NSSplitView!
     @IBOutlet weak var leftSplitWidthConstraint: NSLayoutConstraint!
 
-    private lazy var members: [Companion] = {
+    var companionListViewController: CompanionListViewController?
+    var companionViewController: CompanionViewController? {
+        didSet {
+            companionListViewController?.companionListSelectionHandler = { companion in
+                self.companionViewController?.companion = companion
+            }
+            companionListViewController?.companionList = companions
+        }
+    }
+
+    lazy var companions: [Companion] = {
         guard let fileURL = Bundle.main.url(forResource: "companions", withExtension: "json"),
             let data = try? Data(contentsOf: fileURL)
             else { return [] }
@@ -31,12 +41,27 @@ class ViewController: NSViewController {
         let width = leftSplitWidthConstraint.constant
         splitView.setPosition(width, ofDividerAt: 0)
 
-        representedObject = members
+        #if DEBUG
+        print("\(type(of: self)).\(#function)")
+        #endif
     }
 
-    override var representedObject: Any? {
-        didSet {
-            print(#function)
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+
+        #if DEBUG
+        print("\(type(of: self)).\(#function)")
+        #endif
+
+        switch segue.destinationController {
+
+        case let companionListViewController as CompanionListViewController:
+            self.companionListViewController = companionListViewController
+
+        case let companionViewController as CompanionViewController:
+            self.companionViewController = companionViewController
+
+        default:
+            break
         }
     }
 }
