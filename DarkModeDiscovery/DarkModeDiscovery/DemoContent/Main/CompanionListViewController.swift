@@ -33,6 +33,13 @@ class CompanionListViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.collectionView.wantsLayer = true
+        self.collectionView.layer?.backgroundColor = NSColor.blue.cgColor
+        self.collectionView.backgroundColors = [NSColor.blue]
+
+        self.view.wantsLayer = true
+        self.view.layer?.backgroundColor = NSColor.blue.cgColor
+
         #if DEBUG
         print("\(type(of: self)).\(#function)")
         #endif

@@ -27,6 +27,9 @@ class CompanionViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.wantsLayer = true
+        self.view.layer?.backgroundColor = NSColor.blue.cgColor
+
         #if DEBUG
         print("\(type(of: self)).\(#function)")
         #endif
