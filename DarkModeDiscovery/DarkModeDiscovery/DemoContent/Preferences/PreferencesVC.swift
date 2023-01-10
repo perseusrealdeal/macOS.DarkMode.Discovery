@@ -30,6 +30,9 @@ class PreferencesViewController: NSViewController {
     override func viewDidAppear() {
         super.viewDidAppear()
 
+        self.view.wantsLayer = true
+        self.view.layer?.backgroundColor = NSColor.blue.cgColor
+
         self.parent?.view.window?.title = self.title!
         updateDarkModeOption()
     }

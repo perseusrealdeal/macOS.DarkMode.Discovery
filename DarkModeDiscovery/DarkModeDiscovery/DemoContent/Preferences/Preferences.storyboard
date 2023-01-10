@@ -11,7 +11,7 @@
             <objects>
                 <windowController id="VHw-gu-uhd" customClass="PreferencesWindowController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="dQe-r5-h6F">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="163" y="199" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
@@ -35,10 +35,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="228"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-uj-olC">
-                                <rect key="frame" x="20" y="148" width="410" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <view key="contentView" ambiguous="YES" id="iaV-jv-KXw">
+                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-uj-olC">
+                                <rect key="frame" x="20" y="138" width="410" height="60"/>
+                                <view key="contentView" id="iaV-jv-KXw">
                                     <rect key="frame" x="1" y="1" width="408" height="58"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -68,8 +67,16 @@
                                         </segmentedControl>
                                     </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="f50-0d-SCu"/>
+                                </constraints>
                             </box>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="5h7-uj-olC" firstAttribute="leading" secondItem="5RK-HS-UFI" secondAttribute="leading" constant="20" id="Gdq-dP-BDO"/>
+                            <constraint firstAttribute="trailing" secondItem="5h7-uj-olC" secondAttribute="trailing" constant="20" id="JU1-AO-UcC"/>
+                            <constraint firstItem="5h7-uj-olC" firstAttribute="top" secondItem="5RK-HS-UFI" secondAttribute="top" constant="30" id="WFZ-hp-61l"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="segmentedControl" destination="9E1-6F-RRP" id="qBA-yd-Mz7"/>
