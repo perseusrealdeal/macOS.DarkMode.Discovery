@@ -11,7 +11,7 @@
             <objects>
                 <windowController id="zEn-H0-fel" customClass="MainWindowController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="macos.darkmode.discovery" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="t5D-0x-IF4" customClass="MainWindow" customModule="DarkModeDiscovery" customModuleProvider="target">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="99" y="99" width="480" height="500"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
                         <value key="minSize" type="size" width="480" height="500"/>
@@ -36,33 +36,31 @@
             <objects>
                 <viewController id="kd7-lM-5g6" customClass="ViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Wzp-zk-jds">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="512"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6I-Mb-bdx">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="512"/>
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="ggy-pj-ydL" customClass="TopMainView" customModule="DarkModeDiscovery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="362" width="450" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="j2I-8c-mMa"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="200" width="450" height="50"/>
                                     </customView>
                                     <splitView dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-cM-tzd">
-                                        <rect key="frame" x="0.0" y="100" width="450" height="262"/>
+                                        <rect key="frame" x="0.0" y="50" width="450" height="150"/>
                                         <subviews>
                                             <containerView id="4U9-q4-8MF">
-                                                <rect key="frame" x="0.0" y="0.0" width="225" height="262"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="225" height="150"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="1lV-dv-mcf"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="270" id="sbg-cl-pU1"/>
                                                 </constraints>
                                                 <connections>
                                                     <segue destination="gk4-fw-Opv" kind="embed" identifier="" id="s03-Pr-et1"/>
                                                 </connections>
                                             </containerView>
                                             <containerView id="o44-AS-hZD">
-                                                <rect key="frame" x="226" y="0.0" width="224" height="262"/>
+                                                <rect key="frame" x="226" y="0.0" width="224" height="150"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="pSx-H5-KdC"/>
@@ -78,14 +76,13 @@
                                         </holdingPriorities>
                                     </splitView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="dXU-fX-v5M" customClass="BottomMainView" customModule="DarkModeDiscovery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="450" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="r5T-Mt-g2A"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="50"/>
                                     </customView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="ggy-pj-ydL" firstAttribute="height" secondItem="g6I-Mb-bdx" secondAttribute="height" multiplier="0.2" id="7cN-7o-V6O"/>
                                     <constraint firstItem="ggy-pj-ydL" firstAttribute="width" secondItem="g6I-Mb-bdx" secondAttribute="width" id="EOJ-fI-Ifx"/>
+                                    <constraint firstItem="2EH-cM-tzd" firstAttribute="height" secondItem="g6I-Mb-bdx" secondAttribute="height" multiplier="0.6" id="EbM-gk-nKt"/>
                                     <constraint firstItem="dXU-fX-v5M" firstAttribute="width" secondItem="g6I-Mb-bdx" secondAttribute="width" id="cSt-w2-55L"/>
                                     <constraint firstItem="2EH-cM-tzd" firstAttribute="width" secondItem="g6I-Mb-bdx" secondAttribute="width" id="uko-GV-xfY"/>
                                 </constraints>
@@ -115,7 +112,7 @@
                 </viewController>
                 <customObject id="E1e-1t-HN6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-126" y="287"/>
+            <point key="canvasLocation" x="-126" y="373"/>
         </scene>
         <!--Companion List View Controller-->
         <scene sceneID="iCx-tK-FpQ">
@@ -168,7 +165,7 @@
                 </viewController>
                 <customObject id="l9l-sq-Cqj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-126" y="848"/>
+            <point key="canvasLocation" x="-126" y="825"/>
         </scene>
         <!--Companion View Controller-->
         <scene sceneID="0lK-y3-FRD">
@@ -198,7 +195,7 @@
                 </viewController>
                 <customObject id="MSN-mH-FM6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="464" y="287"/>
+            <point key="canvasLocation" x="473" y="373"/>
         </scene>
     </scenes>
 </document>
