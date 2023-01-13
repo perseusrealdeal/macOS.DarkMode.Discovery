@@ -14,11 +14,19 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="130" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="130" height="160"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7U2-jg-3ut" customClass="ItemImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                    <rect key="frame" x="5" y="35" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="FoR-Xw-QCb"/>
+                        <constraint firstAttribute="height" constant="120" id="y4v-vs-tKF"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="36S-Io-g8j"/>
+                </imageView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wwd-Sq-6zV">
-                    <rect key="frame" x="47" y="17" width="37" height="17"/>
+                    <rect key="frame" x="47" y="13" width="37" height="17"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="gxt-uJ-hoW">
                         <font key="font" usesAppearanceFont="YES"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -27,12 +35,16 @@
                 </textField>
             </subviews>
             <constraints>
-                <constraint firstItem="Wwd-Sq-6zV" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="a5r-bC-hFX"/>
-                <constraint firstItem="Wwd-Sq-6zV" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="gcv-KZ-iMn"/>
+                <constraint firstItem="7U2-jg-3ut" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="72Z-RA-f2t"/>
+                <constraint firstItem="Wwd-Sq-6zV" firstAttribute="top" secondItem="7U2-jg-3ut" secondAttribute="bottom" constant="5" id="99i-BA-L4O"/>
+                <constraint firstAttribute="trailing" secondItem="7U2-jg-3ut" secondAttribute="trailing" constant="5" id="QWQ-hm-8qp"/>
+                <constraint firstItem="7U2-jg-3ut" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="W9i-cP-iS2"/>
+                <constraint firstItem="Wwd-Sq-6zV" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="eW3-UZ-DOZ"/>
             </constraints>
         </customView>
         <customObject id="Ylp-Gc-GhI" customClass="CompanionCollectionViewItem" customModule="DarkModeDiscovery" customModuleProvider="target">
             <connections>
+                <outlet property="imageView" destination="7U2-jg-3ut" id="DSc-45-1Wd"/>
                 <outlet property="textField" destination="Wwd-Sq-6zV" id="nec-zA-Yhn"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="gTW-eZ-g4z"/>
             </connections>

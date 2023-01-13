@@ -17,9 +17,11 @@ class CompanionCollectionViewItem: NSCollectionViewItem {
     override var isSelected: Bool {
         didSet {
             super.isSelected = isSelected
-            view.layer?.borderWidth = isSelected ? 5.0 : 0.0
-            view.layer?.backgroundColor = isSelected ?
-                NSColor.red.cgColor : NSColor.blue.cgColor
+
+            imageView?.layer?.borderWidth = isSelected ? 5.0 : 0.0
+            imageView?.layer?.borderColor = NSColor.white.cgColor
+
+            textField?.textColor = isSelected ? NSColor.white : NSColor.black
         }
     }
 
@@ -53,5 +55,6 @@ class CompanionCollectionViewItem: NSCollectionViewItem {
         guard let companion = self.companion else { return }
 
         textField?.stringValue = companion.name
+        imageView?.image = NSImage(named: companion.iconName)
     }
 }

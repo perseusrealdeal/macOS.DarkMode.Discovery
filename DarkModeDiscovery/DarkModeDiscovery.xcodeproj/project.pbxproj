@@ -22,6 +22,7 @@
 		4B6A98BB295CAF3400965FAF /* PreferencesWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A98B9295CAF3400965FAF /* PreferencesWC.swift */; };
 		4B6C3D24296C3ECE001299E6 /* TopMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C3D23296C3ECE001299E6 /* TopMainView.swift */; };
 		4B6C3D26296C4526001299E6 /* BottomMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C3D25296C4526001299E6 /* BottomMainView.swift */; };
+		4B6C3D2C29704130001299E6 /* ItemImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C3D2B29704130001299E6 /* ItemImageView.swift */; };
 		4B6F459C2965AD1200859528 /* CompanionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F459B2965AD1200859528 /* CompanionViewController.swift */; };
 		E002B00F288E9A8D00E46356 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E002B00E288E9A8D00E46356 /* README.md */; };
 		E002B011288E9A9200E46356 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E002B010288E9A9200E46356 /* LICENSE */; };
@@ -67,6 +68,7 @@
 		4B6A98B9295CAF3400965FAF /* PreferencesWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWC.swift; sourceTree = "<group>"; };
 		4B6C3D23296C3ECE001299E6 /* TopMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainView.swift; sourceTree = "<group>"; };
 		4B6C3D25296C4526001299E6 /* BottomMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMainView.swift; sourceTree = "<group>"; };
+		4B6C3D2B29704130001299E6 /* ItemImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImageView.swift; sourceTree = "<group>"; };
 		4B6F459B2965AD1200859528 /* CompanionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionViewController.swift; sourceTree = "<group>"; };
 		E002B00E288E9A8D00E46356 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E002B010288E9A9200E46356 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				4B6F459B2965AD1200859528 /* CompanionViewController.swift */,
 				4B6C3D23296C3ECE001299E6 /* TopMainView.swift */,
 				4B6C3D25296C4526001299E6 /* BottomMainView.swift */,
+				4B6C3D2B29704130001299E6 /* ItemImageView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				E01D2D3A289A76A6009B932F /* Companion.swift in Sources */,
 				4B44EE0329466A320084C192 /* PerseusUISystemKitSingle.swift in Sources */,
 				4B6A98BB295CAF3400965FAF /* PreferencesWC.swift in Sources */,
+				4B6C3D2C29704130001299E6 /* ItemImageView.swift in Sources */,
 				E00F8383288A4A04000D0A01 /* ViewController.swift in Sources */,
 				4B3A67E72965932D0024077F /* CompanionCollectionViewItem.swift in Sources */,
 				E00F83AC288A4A64000D0A01 /* main.swift in Sources */,

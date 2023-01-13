@@ -16,14 +16,19 @@ class ViewController: NSViewController {
 
     @IBOutlet weak var splitView: NSSplitView!
     @IBOutlet weak var leftSplitWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var topMainImageView: DarkModeImageView!
 
-    var companionListViewController: CompanionListViewController?
+    var companionListViewController: CompanionListViewController? {
+        didSet {
+            companionListViewController?.companionList = companions
+        }
+    }
+
     var companionViewController: CompanionViewController? {
         didSet {
             companionListViewController?.companionListSelectionHandler = { companion in
                 self.companionViewController?.companion = companion
             }
-            companionListViewController?.companionList = companions
         }
     }
 
@@ -44,6 +49,9 @@ class ViewController: NSViewController {
         #if DEBUG
         print("\(type(of: self)).\(#function)")
         #endif
+
+        topMainImageView.imageDark = NSImage(named: "Dwarves")
+        topMainImageView.imageLight = NSImage(named: "Erabor")
     }
 
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {

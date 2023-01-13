@@ -10,7 +10,7 @@
         <scene sceneID="MXA-Sv-x0g">
             <objects>
                 <windowController id="zEn-H0-fel" customClass="MainWindowController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="macos.darkmode.discovery" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="t5D-0x-IF4" customClass="MainWindow" customModule="DarkModeDiscovery" customModuleProvider="target">
+                    <window key="window" title="macos.darkmode.discovery" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="t5D-0x-IF4" customClass="MainWindow" customModule="DarkModeDiscovery" customModuleProvider="target">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="99" y="99" width="480" height="500"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
@@ -43,24 +43,35 @@
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="ggy-pj-ydL" customClass="TopMainView" customModule="DarkModeDiscovery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="200" width="450" height="50"/>
+                                        <rect key="frame" x="0.0" y="150" width="450" height="100"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pch-xV-LUR" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                                <rect key="frame" x="-175" y="50" width="800" height="0.0"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Mol-TW-rN3"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="width" secondItem="ggy-pj-ydL" secondAttribute="height" multiplier="8:1" id="6vf-gh-v4A"/>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="centerY" secondItem="ggy-pj-ydL" secondAttribute="centerY" id="BTp-Jj-hru"/>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="centerX" secondItem="ggy-pj-ydL" secondAttribute="centerX" id="Eup-Hb-xb4"/>
+                                        </constraints>
                                     </customView>
                                     <splitView dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-cM-tzd">
-                                        <rect key="frame" x="0.0" y="50" width="450" height="150"/>
+                                        <rect key="frame" x="0.0" y="50" width="450" height="100"/>
                                         <subviews>
                                             <containerView id="4U9-q4-8MF">
-                                                <rect key="frame" x="0.0" y="0.0" width="225" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="225" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="1lV-dv-mcf"/>
-                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="270" id="sbg-cl-pU1"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="260" id="sbg-cl-pU1"/>
                                                 </constraints>
                                                 <connections>
                                                     <segue destination="gk4-fw-Opv" kind="embed" identifier="" id="s03-Pr-et1"/>
                                                 </connections>
                                             </containerView>
                                             <containerView id="o44-AS-hZD">
-                                                <rect key="frame" x="226" y="0.0" width="224" height="150"/>
+                                                <rect key="frame" x="226" y="0.0" width="224" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="pSx-H5-KdC"/>
@@ -80,10 +91,10 @@
                                     </customView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ggy-pj-ydL" firstAttribute="height" secondItem="g6I-Mb-bdx" secondAttribute="height" multiplier="0.2" id="7cN-7o-V6O"/>
                                     <constraint firstItem="ggy-pj-ydL" firstAttribute="width" secondItem="g6I-Mb-bdx" secondAttribute="width" id="EOJ-fI-Ifx"/>
-                                    <constraint firstItem="2EH-cM-tzd" firstAttribute="height" secondItem="g6I-Mb-bdx" secondAttribute="height" multiplier="0.6" id="EbM-gk-nKt"/>
                                     <constraint firstItem="dXU-fX-v5M" firstAttribute="width" secondItem="g6I-Mb-bdx" secondAttribute="width" id="cSt-w2-55L"/>
+                                    <constraint firstItem="2EH-cM-tzd" firstAttribute="height" secondItem="g6I-Mb-bdx" secondAttribute="height" multiplier="0.4" id="eTi-Wq-VHS"/>
+                                    <constraint firstItem="ggy-pj-ydL" firstAttribute="height" secondItem="g6I-Mb-bdx" secondAttribute="height" multiplier="0.4" id="hOq-at-wBn"/>
                                     <constraint firstItem="2EH-cM-tzd" firstAttribute="width" secondItem="g6I-Mb-bdx" secondAttribute="width" id="uko-GV-xfY"/>
                                 </constraints>
                                 <visibilityPriorities>
@@ -108,6 +119,7 @@
                     <connections>
                         <outlet property="leftSplitWidthConstraint" destination="1lV-dv-mcf" id="Euz-86-V0W"/>
                         <outlet property="splitView" destination="2EH-cM-tzd" id="aab-EL-TmV"/>
+                        <outlet property="topMainImageView" destination="pch-xV-LUR" id="mE0-Wx-SMP"/>
                     </connections>
                 </viewController>
                 <customObject id="E1e-1t-HN6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -132,7 +144,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" id="ONr-gx-sId">
-                                                <size key="itemSize" width="130" height="50"/>
+                                                <size key="itemSize" width="130" height="160"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>

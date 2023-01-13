@@ -1,6 +1,6 @@
 //
 //  PerseusUISystemKitSingle.swift
-//  Version: 1.1.1
+//  Version: 1.1.2
 //
 //  Created by Mikhail Zhigulin in 7530.
 //
@@ -533,28 +533,72 @@ extension Color: SemanticColorProtocol {
 
 public class DarkModeImageView: ImageView {
 
-// swiftlint:disable valid_ibinspectable
-    @IBInspectable
-    var imageLight: Image? {
+    #if os(iOS)
+    @IBInspectable var imageLight: UIImage? {
         didSet {
             light = imageLight
             image = DarkMode.style == .light ? light : dark
         }
     }
 
-    @IBInspectable
-    var imageDark: Image? {
+    @IBInspectable var imageDark: UIImage? {
         didSet {
             dark = imageDark
             image = DarkMode.style == .light ? light : dark
         }
     }
-// swiftlint:enable valid_ibinspectable
+    #elseif os(macOS)
+    @IBInspectable var imageLight: NSImage? {
+        didSet {
+            light = imageLight
+            image = DarkMode.style == .light ? light : dark
+        }
+    }
+
+    @IBInspectable var imageDark: NSImage? {
+        didSet {
+            dark = imageDark
+            image = DarkMode.style == .light ? light : dark
+        }
+    }
+    #endif
 
     private(set) var darkModeObserver: DarkModeObserver?
 
-    private(set) var light: Image?
-    private(set) var dark: Image?
+    #if os(iOS)
+    private(set) var light: UIImage?
+    private(set) var dark: UIImage?
+    #elseif os(macOS)
+    private(set) var light: NSImage?
+    private(set) var dark: NSImage?
+    #endif
+
+    #if os(macOS)
+    public var contentsMode: CALayerContentsGravity = CALayerContentsGravity.resizeAspect {
+        didSet {
+            guard self.image != nil else { return }
+
+            self.layer?.contentsGravity = contentsMode
+        }
+    }
+
+    override public var image: NSImage? {
+        set {
+            self.wantsLayer = true
+
+            self.layer = CALayer()
+
+            self.layer?.contentsGravity = contentsMode
+            self.layer?.contents = newValue
+
+            super.image = newValue
+        }
+
+        get {
+            return super.image
+        }
+    }
+    #endif
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -564,6 +608,10 @@ public class DarkModeImageView: ImageView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configure()
+
+        if let img = image {
+            self.image = img
+        }
     }
 
     private func configure() {
