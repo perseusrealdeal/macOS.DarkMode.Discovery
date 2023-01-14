@@ -38,3 +38,11 @@ Copyright © 7530 - 7531 Mikhail Zhigulin of Novosibirsk.
 - September, the 1st of Slavic year.
 
 Have a look at [LICENSE](https://github.com/perseusrealdeal/macos.darkmode.discovery/blob/a7628a6aaf8a907c69ebe69ef3e3ad899a546486/LICENSE) for details.
+
+TODO: Add some special words about app's theme images and text that had been found on the seas of Internet.
+
+## Author and Acknowledgments
+
+This app called as 'DarkModeDiscovery' was written at Novosibirsk by Mikhail Zhigulin i.e. me, mzhigulin@gmail.com.
+
+Mostly I'd like thank my lovely parents for supporting me in all my ways.

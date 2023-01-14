@@ -11,11 +11,11 @@
 //
 
 import Cocoa
-
+let USE = true
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        #if DEBUG && useConsole
+        #if DEBUG && true
         print(">> Launching with business matter purpose")
         print(">> [\(type(of: self))]." + #function)
         #endif

@@ -39,7 +39,7 @@ class CompanionCollectionViewItem: NSCollectionViewItem {
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.blue.cgColor
 
-        #if DEBUG && useConsole
+        #if DEBUG && false
         print("\(type(of: self)).\(#function)")
         #endif
 
@@ -48,7 +48,7 @@ class CompanionCollectionViewItem: NSCollectionViewItem {
 
     func updateCompanionView() {
 
-        #if DEBUG && useConsole
+        #if DEBUG && false
         print("\(type(of: self)).\(#function)")
         #endif
 

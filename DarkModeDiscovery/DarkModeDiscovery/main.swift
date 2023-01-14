@@ -12,9 +12,12 @@
 
 import Cocoa
 
-// MARK: - Debug messages flag
+// MARK: - Debug messages flags
 
-let useConsole = false
+let useConsole = true
+
+let printMajorDebug = true
+let printMinorDebug = true
 
 // MARK: - Construct the app's top elements
 

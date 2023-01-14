@@ -19,7 +19,7 @@ class BottomMainView: NSView {
 
         configure()
 
-        #if DEBUG && useConsole
+        #if DEBUG && false
         print("\(type(of: self)).\(#function)")
         #endif
     }
@@ -29,7 +29,7 @@ class BottomMainView: NSView {
 
         configure()
 
-        #if DEBUG && useConsole
+        #if DEBUG && false
         print("\(type(of: self)).\(#function)")
         #endif
     }

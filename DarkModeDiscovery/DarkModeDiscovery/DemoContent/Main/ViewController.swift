@@ -48,7 +48,7 @@ class ViewController: NSViewController {
         let width = leftSplitWidthConstraint.constant
         splitView.setPosition(width, ofDividerAt: 0)
 
-        #if DEBUG && useConsole
+        #if DEBUG && false
         print("\(type(of: self)).\(#function)")
         #endif
 
@@ -61,7 +61,7 @@ class ViewController: NSViewController {
 
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
 
-        #if DEBUG && useConsole
+        #if DEBUG && false
         print("\(type(of: self)).\(#function)")
         #endif
 
