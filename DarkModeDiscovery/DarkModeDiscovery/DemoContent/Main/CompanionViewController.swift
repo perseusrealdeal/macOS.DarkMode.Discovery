@@ -30,7 +30,7 @@ class CompanionViewController: NSViewController {
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.blue.cgColor
 
-        #if DEBUG
+        #if DEBUG && useConsole
         print("\(type(of: self)).\(#function)")
         #endif
     }

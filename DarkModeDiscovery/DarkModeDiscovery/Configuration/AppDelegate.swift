@@ -15,7 +15,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        #if DEBUG
+        #if DEBUG && useConsole
         print(">> Launching with business matter purpose")
         print(">> [\(type(of: self))]." + #function)
         #endif

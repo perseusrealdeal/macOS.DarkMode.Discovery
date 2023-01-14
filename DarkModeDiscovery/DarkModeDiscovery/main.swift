@@ -12,6 +12,10 @@
 
 import Cocoa
 
+// MARK: - Debug messages flag
+
+let useConsole = false
+
 // MARK: - Construct the app's top elements
 
 let app = NSApplication.shared

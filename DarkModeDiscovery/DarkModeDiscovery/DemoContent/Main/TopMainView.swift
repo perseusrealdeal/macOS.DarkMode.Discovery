@@ -19,7 +19,7 @@ class TopMainView: NSView {
 
         configure()
 
-        #if DEBUG
+        #if DEBUG && useConsole
         print("\(type(of: self)).\(#function)")
         #endif
     }
@@ -29,7 +29,7 @@ class TopMainView: NSView {
 
         configure()
 
-        #if DEBUG
+        #if DEBUG && useConsole
         print("\(type(of: self)).\(#function)")
         #endif
     }

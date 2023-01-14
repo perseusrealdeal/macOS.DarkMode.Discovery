@@ -22,7 +22,7 @@ class CompanionListViewController: NSViewController {
         didSet {
             guard isViewLoaded else { return }
 
-            #if DEBUG
+            #if DEBUG && useConsole
             print("\(type(of: self)).\(#function)")
             #endif
 
@@ -40,7 +40,7 @@ class CompanionListViewController: NSViewController {
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.blue.cgColor
 
-        #if DEBUG
+        #if DEBUG && useConsole
         print("\(type(of: self)).\(#function)")
         #endif
 
@@ -50,14 +50,14 @@ class CompanionListViewController: NSViewController {
     private func reloadCompanionListAndSelectFirstItemIfNecessary() {
 
         if companionList.isEmpty {
-            #if DEBUG
+            #if DEBUG && useConsole
             print("\(type(of: self)).\(#function), it's empty!")
             #endif
 
             return
         }
 
-        #if DEBUG
+        #if DEBUG && useConsole
         print("\(type(of: self)).\(#function)")
         #endif
 
@@ -70,7 +70,7 @@ extension CompanionListViewController: NSCollectionViewDataSource {
     func collectionView(_ collectionView: NSCollectionView,
                         numberOfItemsInSection section: Int) -> Int {
 
-        #if DEBUG
+        #if DEBUG && useConsole
         print("\(type(of: self)).\(#function) count: \(companionList.count)")
         #endif
 
@@ -84,7 +84,7 @@ extension CompanionListViewController: NSCollectionViewDataSource {
             NSUserInterfaceItemIdentifier(rawValue: "CompanionCollectionViewItem"),
             for: indexPath)
 
-        #if DEBUG
+        #if DEBUG && useConsole
         print("\(type(of: self)).\(#function), indexPath: \(indexPath)")
         #endif
 
@@ -93,7 +93,7 @@ extension CompanionListViewController: NSCollectionViewDataSource {
             let one = companionList[(indexPath as NSIndexPath).item]
             companion.companion = one
 
-            #if DEBUG
+            #if DEBUG && useConsole
             print("\(type(of: self)).\(#function), for: \(companion.companion?.name as Any)")
             #endif
         }

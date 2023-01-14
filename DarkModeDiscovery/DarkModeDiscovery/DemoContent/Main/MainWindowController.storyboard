@@ -88,6 +88,17 @@
                                     </splitView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="dXU-fX-v5M" customClass="BottomMainView" customModule="DarkModeDiscovery" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="450" height="50"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mj2-Gc-sLl" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="25" width="400" height="0.0"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="uaX-XN-hFq"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="mj2-Gc-sLl" firstAttribute="width" secondItem="dXU-fX-v5M" secondAttribute="height" multiplier="8:1" id="Grd-Wl-utO"/>
+                                            <constraint firstItem="mj2-Gc-sLl" firstAttribute="centerX" secondItem="dXU-fX-v5M" secondAttribute="centerX" id="Vej-XX-YhG"/>
+                                            <constraint firstItem="mj2-Gc-sLl" firstAttribute="centerY" secondItem="dXU-fX-v5M" secondAttribute="centerY" id="bc9-Cb-qye"/>
+                                        </constraints>
                                     </customView>
                                 </subviews>
                                 <constraints>
@@ -117,6 +128,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomMainImageView" destination="mj2-Gc-sLl" id="HfW-zL-2Qu"/>
                         <outlet property="leftSplitWidthConstraint" destination="1lV-dv-mcf" id="Euz-86-V0W"/>
                         <outlet property="splitView" destination="2EH-cM-tzd" id="aab-EL-TmV"/>
                         <outlet property="topMainImageView" destination="pch-xV-LUR" id="mE0-Wx-SMP"/>
