@@ -43,6 +43,6 @@ TODO: Add some special words about app's theme images and text that had been fou
 
 ## Author and Acknowledgments
 
-This app called as 'DarkModeDiscovery' was written at Novosibirsk by Mikhail Zhigulin i.e. me, mzhigulin@gmail.com.
+This app called as `DarkModeDiscovery` was written at Novosibirsk by Mikhail Zhigulin i.e. me, mzhigulin@gmail.com.
 
 Mostly I'd like thank my lovely parents for supporting me in all my ways.

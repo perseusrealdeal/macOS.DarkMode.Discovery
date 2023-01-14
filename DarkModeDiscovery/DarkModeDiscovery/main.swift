@@ -12,13 +12,6 @@
 
 import Cocoa
 
-// MARK: - Debug messages flags
-
-let useConsole = true
-
-let printMajorDebug = true
-let printMinorDebug = true
-
 // MARK: - Construct the app's top elements
 
 let app = NSApplication.shared
