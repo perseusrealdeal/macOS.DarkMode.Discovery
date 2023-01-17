@@ -52,8 +52,11 @@ class ViewController: NSViewController {
         print("\(type(of: self)).\(#function)")
         #endif
 
-        topMainImageView.imageDark = NSImage(named: "Dwarves")
-        topMainImageView.imageLight = NSImage(named: "Erebor")
+        let imageErebor = NSImage(named: "Erebor")
+        let imageDwarves = NSImage(named: "Dwarves")
+
+        topMainImageView.imageLight = imageErebor
+        topMainImageView.imageDark = imageDwarves
 
         bottomMainImageView.imageDark = NSImage()
         bottomMainImageView.imageLight = NSImage()

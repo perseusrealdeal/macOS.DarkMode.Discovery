@@ -44,12 +44,8 @@ import Cocoa
 
 #if os(iOS)
 public typealias Color = UIColor
-public typealias ImageView = UIImageView
-public typealias Image = UIImage
 #elseif os(macOS)
 public typealias Color = NSColor
-public typealias ImageView = NSImageView
-public typealias Image = NSImage
 #endif
 
 // MARK: - Required Color Creator with 0 .. 255 format
@@ -531,74 +527,31 @@ extension Color: SemanticColorProtocol {
 
 // MARK: - Image View with Dynamic Apperance Changing
 
-public class DarkModeImageView: ImageView {
+#if os(iOS)
 
-    #if os(iOS)
-    @IBInspectable var imageLight: UIImage? {
+@IBDesignable
+public class DarkModeImageView: UIImageView {
+
+    @IBInspectable
+    var imageLight: UIImage? {
         didSet {
             light = imageLight
             image = DarkMode.style == .light ? light : dark
         }
     }
 
-    @IBInspectable var imageDark: UIImage? {
+    @IBInspectable
+    var imageDark: UIImage? {
         didSet {
             dark = imageDark
             image = DarkMode.style == .light ? light : dark
         }
     }
-    #elseif os(macOS)
-    @IBInspectable var imageLight: NSImage? {
-        didSet {
-            light = imageLight
-            image = DarkMode.style == .light ? light : dark
-        }
-    }
-
-    @IBInspectable var imageDark: NSImage? {
-        didSet {
-            dark = imageDark
-            image = DarkMode.style == .light ? light : dark
-        }
-    }
-    #endif
 
     private(set) var darkModeObserver: DarkModeObserver?
 
-    #if os(iOS)
     private(set) var light: UIImage?
     private(set) var dark: UIImage?
-    #elseif os(macOS)
-    private(set) var light: NSImage?
-    private(set) var dark: NSImage?
-    #endif
-
-    #if os(macOS)
-    public var contentsMode: CALayerContentsGravity = CALayerContentsGravity.resizeAspect {
-        didSet {
-            guard self.image != nil else { return }
-
-            self.layer?.contentsGravity = contentsMode
-        }
-    }
-
-    override public var image: NSImage? {
-        set {
-            self.wantsLayer = true
-
-            self.layer = CALayer()
-
-            self.layer?.contentsGravity = contentsMode
-            self.layer?.contents = newValue
-
-            super.image = newValue
-        }
-
-        get {
-            return super.image
-        }
-    }
-    #endif
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -608,10 +561,6 @@ public class DarkModeImageView: ImageView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configure()
-
-        if let img = image {
-            self.image = img
-        }
     }
 
     private func configure() {
@@ -620,7 +569,7 @@ public class DarkModeImageView: ImageView {
         }
     }
 
-    public func configure(_ light: Image?, _ dark: Image?) {
+    public func configure(_ light: UIImage?, _ dark: UIImage?) {
         self.light = light
         self.dark = dark
 
@@ -631,3 +580,122 @@ public class DarkModeImageView: ImageView {
         image = DarkMode.style == .light ? self.light : self.dark
     }
 }
+
+#elseif os(macOS)
+
+public enum ScaleImageViewMacOS: Int, CustomStringConvertible {
+
+    case none                       = 0
+    case axesIndependently          = 1 // Aspect Fill
+    case proportionallyUpOrDown     = 2 // Aspect Fit
+    case proportionallyDown         = 3 // Center Top
+    case proportionallyClipToBounds = 4 // Aspect Fill with cliping to ImageView bounds
+
+    public var description: String {
+        switch self {
+        case .none:
+            return "As is, no scaling."
+        case .axesIndependently:
+            return ".Aspect Fill"
+        case .proportionallyUpOrDown:
+            return ".Aspect Fit"
+        case .proportionallyDown:
+            return ".Center Top"
+        case .proportionallyClipToBounds:
+            return ".Aspect Fill cliped to bounds"
+        }
+    }
+}
+
+@IBDesignable
+public class DarkModeImageView: NSImageView {
+
+    @IBInspectable
+    var imageLight: NSImage? {
+        didSet {
+            light = imageLight
+            image = DarkMode.style == .light ? light : dark
+        }
+    }
+
+    @IBInspectable
+    var imageDark: NSImage? {
+        didSet {
+            dark = imageDark
+            image = DarkMode.style == .light ? light : dark
+        }
+    }
+
+    @IBInspectable
+    var aspectFillClipToBounds: Bool = false
+
+    private(set) var darkModeObserver: DarkModeObserver?
+
+    private(set) var light: NSImage?
+    private(set) var dark: NSImage?
+
+    override public func awakeFromNib() {
+        self.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        self.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
+
+        if aspectFillClipToBounds { self.imageScaling = .scaleNone }
+
+        self.layer?.backgroundColor = NSColor.red.cgColor
+        self.wantsLayer = true
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configure()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        configure()
+    }
+
+    private func configure() {
+        darkModeObserver = DarkModeObserver { style in
+            self.image = style == .light ? self.light : self.dark
+        }
+    }
+
+    public func configure(_ light: NSImage?, _ dark: NSImage?) {
+        self.light = light
+        self.dark = dark
+
+        darkModeObserver?.action = { style in
+            self.image = style == .light ? self.light : self.dark
+        }
+
+        image = DarkMode.style == .light ? self.light : self.dark
+    }
+
+    override public func draw(_ dirtyRect: NSRect) {
+        guard aspectFillClipToBounds, let image = self.image else {
+            super.draw(dirtyRect)
+            return
+        }
+
+        // Get variables
+
+        let viewWidth = self.bounds.size.width
+        let viewHeight = self.bounds.size.height
+
+        let width = image.size.width
+        let height = image.size.height
+
+        // https://study.com/learn/lesson/what-is-aspect-ratio.html
+        let imageViewRatio = viewWidth / viewHeight
+        let imageRatio = width / height
+
+        // Scale image of the ImageView with clipping to bounds
+
+        image.size.width = imageRatio < imageViewRatio ? viewWidth : viewHeight * imageRatio
+        image.size.height = imageRatio < imageViewRatio ? viewWidth / imageRatio : viewHeight
+
+        super.draw(dirtyRect)
+    }
+}
+
+#endif

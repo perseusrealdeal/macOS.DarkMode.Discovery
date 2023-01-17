@@ -45,15 +45,19 @@
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="ggy-pj-ydL" customClass="TopMainView" customModule="DarkModeDiscovery" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="150" width="450" height="100"/>
                                         <subviews>
-                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pch-xV-LUR" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
-                                                <rect key="frame" x="-175" y="50" width="800" height="0.0"/>
-                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Mol-TW-rN3"/>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="pch-xV-LUR" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="450" height="100"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="Mol-TW-rN3"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="pch-xV-LUR" firstAttribute="width" secondItem="ggy-pj-ydL" secondAttribute="height" multiplier="8:1" id="6vf-gh-v4A"/>
-                                            <constraint firstItem="pch-xV-LUR" firstAttribute="centerY" secondItem="ggy-pj-ydL" secondAttribute="centerY" id="BTp-Jj-hru"/>
-                                            <constraint firstItem="pch-xV-LUR" firstAttribute="centerX" secondItem="ggy-pj-ydL" secondAttribute="centerX" id="Eup-Hb-xb4"/>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="centerY" secondItem="ggy-pj-ydL" secondAttribute="centerY" id="49R-kT-shj"/>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="height" secondItem="ggy-pj-ydL" secondAttribute="height" id="AxD-dD-CkH"/>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="width" secondItem="ggy-pj-ydL" secondAttribute="width" id="PBe-yA-LZj"/>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="centerX" secondItem="ggy-pj-ydL" secondAttribute="centerX" id="fvI-Te-MmL"/>
                                         </constraints>
                                     </customView>
                                     <splitView dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-cM-tzd">
@@ -90,12 +94,12 @@
                                         <rect key="frame" x="0.0" y="0.0" width="450" height="50"/>
                                         <subviews>
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mj2-Gc-sLl" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="25" width="400" height="0.0"/>
+                                                <rect key="frame" x="-175" y="25" width="800" height="0.0"/>
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="uaX-XN-hFq"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="mj2-Gc-sLl" firstAttribute="width" secondItem="dXU-fX-v5M" secondAttribute="height" multiplier="8:1" id="Grd-Wl-utO"/>
+                                            <constraint firstItem="mj2-Gc-sLl" firstAttribute="width" secondItem="dXU-fX-v5M" secondAttribute="height" multiplier="16:1" id="Grd-Wl-utO"/>
                                             <constraint firstItem="mj2-Gc-sLl" firstAttribute="centerX" secondItem="dXU-fX-v5M" secondAttribute="centerX" id="Vej-XX-YhG"/>
                                             <constraint firstItem="mj2-Gc-sLl" firstAttribute="centerY" secondItem="dXU-fX-v5M" secondAttribute="centerY" id="bc9-Cb-qye"/>
                                         </constraints>
