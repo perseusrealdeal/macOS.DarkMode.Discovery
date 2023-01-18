@@ -22,10 +22,6 @@ class CompanionListViewController: NSViewController {
         didSet {
             guard isViewLoaded else { return }
 
-            #if DEBUG && false
-            print("\(type(of: self)).\(#function)")
-            #endif
-
             reloadCompanionListAndSelectFirstItemIfNecessary()
         }
     }
@@ -40,10 +36,6 @@ class CompanionListViewController: NSViewController {
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.blue.cgColor
 
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
-
         reloadCompanionListAndSelectFirstItemIfNecessary()
     }
 
@@ -57,10 +49,6 @@ class CompanionListViewController: NSViewController {
             return
         }
 
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
-
         collectionView.reloadData()
     }
 }
@@ -69,10 +57,6 @@ extension CompanionListViewController: NSCollectionViewDataSource {
 
     func collectionView(_ collectionView: NSCollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function) count: \(companionList.count)")
-        #endif
 
         return companionList.count
     }
@@ -84,18 +68,10 @@ extension CompanionListViewController: NSCollectionViewDataSource {
             NSUserInterfaceItemIdentifier(rawValue: "CompanionCollectionViewItem"),
             for: indexPath)
 
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function), indexPath: \(indexPath)")
-        #endif
-
         if let companion = item as? CompanionCollectionViewItem {
 
             let one = companionList[(indexPath as NSIndexPath).item]
             companion.companion = one
-
-            #if DEBUG && false
-            print("\(type(of: self)).\(#function), for: \(companion.companion?.name as Any)")
-            #endif
         }
 
         return item

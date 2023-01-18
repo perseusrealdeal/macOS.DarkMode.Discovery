@@ -39,19 +39,10 @@ class CompanionCollectionViewItem: NSCollectionViewItem {
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.blue.cgColor
 
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
-
         updateCompanionView()
     }
 
     func updateCompanionView() {
-
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
-
         guard let companion = self.companion else { return }
 
         textField?.stringValue = companion.name

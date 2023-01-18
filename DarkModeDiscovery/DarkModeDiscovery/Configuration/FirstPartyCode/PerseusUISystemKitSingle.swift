@@ -567,6 +567,8 @@ public class DarkModeImageView: UIImageView {
         darkModeObserver = DarkModeObserver { style in
             self.image = style == .light ? self.light : self.dark
         }
+
+        image = DarkMode.style == .light ? self.light : self.dark
     }
 
     public func configure(_ light: UIImage?, _ dark: UIImage?) {
@@ -585,7 +587,7 @@ public class DarkModeImageView: UIImageView {
 
 public enum ScaleImageViewMacOS: Int, CustomStringConvertible {
 
-    case none                       = 0
+    case scaleNone                  = 0 // No scale at all
     case axesIndependently          = 1 // Aspect Fill
     case proportionallyUpOrDown     = 2 // Aspect Fit
     case proportionallyDown         = 3 // Center Top
@@ -593,16 +595,16 @@ public enum ScaleImageViewMacOS: Int, CustomStringConvertible {
 
     public var description: String {
         switch self {
-        case .none:
+        case .scaleNone:
             return "As is, no scaling."
         case .axesIndependently:
-            return ".Aspect Fill"
+            return ".Aspect Fill."
         case .proportionallyUpOrDown:
-            return ".Aspect Fit"
+            return ".Aspect Fit."
         case .proportionallyDown:
-            return ".Center Top"
+            return ".Center Top."
         case .proportionallyClipToBounds:
-            return ".Aspect Fill cliped to bounds"
+            return ".Aspect Fill cliped to bounds."
         }
     }
 }
@@ -613,16 +615,14 @@ public class DarkModeImageView: NSImageView {
     @IBInspectable
     var imageLight: NSImage? {
         didSet {
-            light = imageLight
-            image = DarkMode.style == .light ? light : dark
+            image = DarkMode.style == .light ? imageLight : imageDark
         }
     }
 
     @IBInspectable
     var imageDark: NSImage? {
         didSet {
-            dark = imageDark
-            image = DarkMode.style == .light ? light : dark
+            image = DarkMode.style == .light ? imageLight : imageDark
         }
     }
 
@@ -631,17 +631,11 @@ public class DarkModeImageView: NSImageView {
 
     private(set) var darkModeObserver: DarkModeObserver?
 
-    private(set) var light: NSImage?
-    private(set) var dark: NSImage?
-
     override public func awakeFromNib() {
         self.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         self.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
 
         if aspectFillClipToBounds { self.imageScaling = .scaleNone }
-
-        self.layer?.backgroundColor = NSColor.red.cgColor
-        self.wantsLayer = true
     }
 
     override init(frame: CGRect) {
@@ -654,21 +648,17 @@ public class DarkModeImageView: NSImageView {
         configure()
     }
 
-    private func configure() {
-        darkModeObserver = DarkModeObserver { style in
-            self.image = style == .light ? self.light : self.dark
-        }
+    public func configure(_ light: NSImage?, _ dark: NSImage?) {
+        configure()
+
+        self.imageLight = light
+        self.imageDark = dark
     }
 
-    public func configure(_ light: NSImage?, _ dark: NSImage?) {
-        self.light = light
-        self.dark = dark
-
-        darkModeObserver?.action = { style in
-            self.image = style == .light ? self.light : self.dark
+    private func configure() {
+        darkModeObserver = DarkModeObserver { style in
+            self.image = style == .light ? self.imageLight : self.imageDark
         }
-
-        image = DarkMode.style == .light ? self.light : self.dark
     }
 
     override public func draw(_ dirtyRect: NSRect) {

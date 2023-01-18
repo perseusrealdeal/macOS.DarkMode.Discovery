@@ -29,17 +29,9 @@ class CompanionViewController: NSViewController {
 
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.blue.cgColor
-
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
     }
 
     func updateCompanionView(_ companion: Companion?) {
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
-
         label.stringValue = companion?.name ?? ""
     }
 }

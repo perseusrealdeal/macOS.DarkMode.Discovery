@@ -27,8 +27,5 @@ class MainWindowController: NSWindowController {
 
     override func windowDidLoad() {
         super.windowDidLoad()
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
     }
 }

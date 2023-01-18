@@ -17,9 +17,6 @@ class ViewController: NSViewController {
     @IBOutlet weak var splitView: NSSplitView!
     @IBOutlet weak var leftSplitWidthConstraint: NSLayoutConstraint!
 
-    @IBOutlet weak var topMainImageView: DarkModeImageView!
-    @IBOutlet weak var bottomMainImageView: DarkModeImageView!
-
     var companionListViewController: CompanionListViewController? {
         didSet {
             companionListViewController?.companionList = companions
@@ -47,26 +44,9 @@ class ViewController: NSViewController {
 
         let width = leftSplitWidthConstraint.constant
         splitView.setPosition(width, ofDividerAt: 0)
-
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
-
-        let imageErebor = NSImage(named: "Erebor")
-        let imageDwarves = NSImage(named: "Dwarves")
-
-        topMainImageView.imageLight = imageErebor
-        topMainImageView.imageDark = imageDwarves
-
-        bottomMainImageView.imageDark = NSImage()
-        bottomMainImageView.imageLight = NSImage()
     }
 
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
 
         switch segue.destinationController {
 

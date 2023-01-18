@@ -18,20 +18,12 @@ class TopMainView: NSView {
         super.init(frame: frameRect)
 
         configure()
-
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
     }
 
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)
 
         configure()
-
-        #if DEBUG && false
-        print("\(type(of: self)).\(#function)")
-        #endif
     }
 
     private func configure() {
