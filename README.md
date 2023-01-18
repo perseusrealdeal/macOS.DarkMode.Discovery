@@ -32,7 +32,8 @@ This project is used to prove a set of Perseus Dark Mode capabilities.
 
 ## License MIT
 
-Copyright © 7530 - 7531 Mikhail Zhigulin of Novosibirsk.
+Copyright © 7530 - 7531 Mikhail Zhigulin of Novosibirsk
+Copyright © 7530 - 7531 PerseusRealDeal
 
 - The year starts from the creation of the world according to a Slavic calendar.
 - September, the 1st of Slavic year.

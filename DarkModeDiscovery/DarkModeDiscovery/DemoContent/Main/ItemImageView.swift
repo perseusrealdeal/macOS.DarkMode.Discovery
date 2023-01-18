@@ -2,8 +2,13 @@
 //  ItemImageView.swift
 //  DarkModeDiscovery
 //
-//  Created by Mikhail Zhigulin on 12/01/2023.
-//  Copyright © 2023 PerseusRealDeal. All rights reserved.
+//  Created by Mikhail Zhigulin in 7531.
+//
+//  Copyright © 7531 Mikhail Zhigulin of Novosibirsk.
+//  Copyright © 7531 PerseusRealDeal.
+//
+//  Licensed under the special license. See LICENSE file.
+//  All rights reserved.
 //
 
 import Cocoa
