@@ -35,6 +35,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="228"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qmk-kD-jq1" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="228"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Ktr-Lg-9Ke"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="BilboAndRing"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="BilboDark"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                             <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-uj-olC">
                                 <rect key="frame" x="20" y="138" width="410" height="60"/>
                                 <view key="contentView" id="iaV-jv-KXw">
@@ -73,9 +82,13 @@
                             </box>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qmk-kD-jq1" secondAttribute="bottom" id="3ph-d5-fcd"/>
                             <constraint firstItem="5h7-uj-olC" firstAttribute="leading" secondItem="5RK-HS-UFI" secondAttribute="leading" constant="20" id="Gdq-dP-BDO"/>
                             <constraint firstAttribute="trailing" secondItem="5h7-uj-olC" secondAttribute="trailing" constant="20" id="JU1-AO-UcC"/>
+                            <constraint firstItem="qmk-kD-jq1" firstAttribute="leading" secondItem="5RK-HS-UFI" secondAttribute="leading" id="LtI-3r-L1i"/>
+                            <constraint firstItem="qmk-kD-jq1" firstAttribute="top" secondItem="5RK-HS-UFI" secondAttribute="top" id="Q0p-wx-huc"/>
                             <constraint firstItem="5h7-uj-olC" firstAttribute="top" secondItem="5RK-HS-UFI" secondAttribute="top" constant="30" id="WFZ-hp-61l"/>
+                            <constraint firstAttribute="trailing" secondItem="qmk-kD-jq1" secondAttribute="trailing" id="quy-Zf-wQu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -88,4 +101,8 @@
             <point key="canvasLocation" x="671" y="253"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BilboAndRing" width="720" height="304"/>
+        <image name="BilboDark" width="950" height="392"/>
+    </resources>
 </document>

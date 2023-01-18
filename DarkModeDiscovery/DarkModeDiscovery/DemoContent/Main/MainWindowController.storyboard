@@ -51,7 +51,7 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="Erebor"/>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="Dwarves"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="DwarvesAndHiddenDoor"/>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                         </subviews>
@@ -100,8 +100,8 @@
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="uaX-XN-hFq"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="Dwarves"/>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="Erebor"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="EreborInside"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="DragonAndBilbo"/>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                         </subviews>
@@ -209,6 +209,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5au-tj-4bR" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="xzx-Gy-l7r"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="CompanyClimbing"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="Heart"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lpJ-SG-Can">
                                 <rect key="frame" x="207" y="142" width="37" height="17"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="zK4-BF-794">
@@ -219,8 +228,12 @@
                             </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="5au-tj-4bR" firstAttribute="top" secondItem="t5z-Ty-2yq" secondAttribute="top" id="0SJ-Ev-XX6"/>
                             <constraint firstItem="lpJ-SG-Can" firstAttribute="centerY" secondItem="t5z-Ty-2yq" secondAttribute="centerY" id="8yq-0t-Ej1"/>
+                            <constraint firstAttribute="bottom" secondItem="5au-tj-4bR" secondAttribute="bottom" id="FZx-U2-Aoc"/>
+                            <constraint firstItem="5au-tj-4bR" firstAttribute="leading" secondItem="t5z-Ty-2yq" secondAttribute="leading" id="GMC-eB-6y6"/>
                             <constraint firstItem="lpJ-SG-Can" firstAttribute="centerX" secondItem="t5z-Ty-2yq" secondAttribute="centerX" id="NVz-rD-mFK"/>
+                            <constraint firstAttribute="trailing" secondItem="5au-tj-4bR" secondAttribute="trailing" id="Ptc-QF-nsq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -233,7 +246,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Dwarves" width="1000" height="212"/>
+        <image name="CompanyClimbing" width="1297" height="1151"/>
+        <image name="DragonAndBilbo" width="1845" height="622"/>
+        <image name="DwarvesAndHiddenDoor" width="1648" height="1080"/>
         <image name="Erebor" width="1270" height="293"/>
+        <image name="EreborInside" width="2560" height="1125"/>
+        <image name="Heart" width="576" height="800"/>
     </resources>
 </document>
