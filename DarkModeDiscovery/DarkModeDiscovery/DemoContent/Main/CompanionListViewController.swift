@@ -31,11 +31,11 @@ class CompanionListViewController: NSViewController {
         super.viewDidLoad()
 
         self.collectionView.wantsLayer = true
-        self.collectionView.layer?.backgroundColor = NSColor.blue.cgColor
-        self.collectionView.backgroundColors = [NSColor.blue]
-
+        // self.collectionView.layer?.backgroundColor = NSColor.blue.cgColor
+        // self.collectionView.backgroundColors = [NSColor.blue]
+        self.collectionView.backgroundColors = [NSColor.clear]
         self.view.wantsLayer = true
-        self.view.layer?.backgroundColor = NSColor.blue.cgColor
+        // self.view.layer?.backgroundColor = NSColor.blue.cgColor
 
         reloadCompanionListAndSelectFirstItemIfNecessary()
     }

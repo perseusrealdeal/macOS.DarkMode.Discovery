@@ -156,9 +156,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wLm-68-HNO" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="MjK-VM-7uu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="Heart"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="Heart"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                             <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oe2-DN-uNG">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <clipView key="contentView" drawsBackground="NO" id="XTU-e3-VL1">
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="XTU-e3-VL1">
                                     <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -190,6 +199,10 @@
                             <constraint firstAttribute="trailing" secondItem="oe2-DN-uNG" secondAttribute="trailing" id="0JN-Pu-Mth"/>
                             <constraint firstAttribute="bottom" secondItem="oe2-DN-uNG" secondAttribute="bottom" id="7V8-cK-XMH"/>
                             <constraint firstItem="oe2-DN-uNG" firstAttribute="top" secondItem="DrT-Ou-tXg" secondAttribute="top" id="LoX-7j-ECz"/>
+                            <constraint firstItem="wLm-68-HNO" firstAttribute="leading" secondItem="DrT-Ou-tXg" secondAttribute="leading" id="QPv-Tp-Saw"/>
+                            <constraint firstAttribute="bottom" secondItem="wLm-68-HNO" secondAttribute="bottom" id="ZfY-Ri-e4B"/>
+                            <constraint firstAttribute="trailing" secondItem="wLm-68-HNO" secondAttribute="trailing" id="agU-a6-plM"/>
+                            <constraint firstItem="wLm-68-HNO" firstAttribute="top" secondItem="DrT-Ou-tXg" secondAttribute="top" id="ile-3t-wNQ"/>
                             <constraint firstItem="oe2-DN-uNG" firstAttribute="leading" secondItem="DrT-Ou-tXg" secondAttribute="leading" id="ldf-os-NSJ"/>
                         </constraints>
                     </view>
@@ -215,7 +228,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="CompanyClimbing"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="Heart"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="BilboAndGendalf"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lpJ-SG-Can">
@@ -246,6 +259,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BilboAndGendalf" width="1392" height="586"/>
         <image name="CompanyClimbing" width="1297" height="1151"/>
         <image name="DragonAndBilbo" width="1845" height="622"/>
         <image name="DwarvesAndHiddenDoor" width="1648" height="1080"/>
