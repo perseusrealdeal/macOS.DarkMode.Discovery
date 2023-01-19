@@ -15,7 +15,13 @@ import Cocoa
 
 class CompanionViewController: NSViewController {
 
-    @IBOutlet weak var label: NSTextField!
+    @IBOutlet weak var nameValue: NSTextField!
+
+    @IBOutlet weak var ageLabel: NSTextField!
+    @IBOutlet weak var ageValue: NSTextField!
+
+    @IBOutlet weak var raceLabel: NSTextField!
+    @IBOutlet weak var raceValue: NSTextField!
 
     var companion: Companion? {
         didSet {
@@ -30,9 +36,34 @@ class CompanionViewController: NSViewController {
 
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.blue.cgColor
+
+        nameValue.textColor = NSColor.white
+        ageValue.textColor = NSColor.white
+        raceValue.textColor = NSColor.white
+
+        ageLabel.textColor = NSColor.white
+        raceLabel.textColor = NSColor.white
+
+        updateCompanionView(nil)
     }
 
     func updateCompanionView(_ companion: Companion?) {
-        label.stringValue = companion?.name ?? ""
+        guard let friend = companion else {
+            nameValue.stringValue = ""
+            ageValue.stringValue = ""
+            raceValue.stringValue = ""
+
+            ageLabel.isHidden = true
+            raceLabel.isHidden = true
+
+            return
+        }
+
+        ageLabel.isHidden = false
+        raceLabel.isHidden = false
+
+        nameValue.stringValue = friend.name
+        ageValue.stringValue = friend.age
+        raceValue.stringValue = friend.race.single
     }
 }

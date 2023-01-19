@@ -228,13 +228,65 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="CompanyClimbing"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="BilboAndGendalf"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="BilboAndGandalf"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lpJ-SG-Can">
-                                <rect key="frame" x="207" y="142" width="37" height="17"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="zK4-BF-794">
-                                    <font key="font" usesAppearanceFont="YES"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UJQ-HS-z4v">
+                                <rect key="frame" x="18" y="230" width="254" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9wS-Qs-wwW"/>
+                                    <constraint firstAttribute="height" constant="50" id="tZe-yt-JhS"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="NameValue" id="kd0-HY-3yf">
+                                    <font key="font" metaFont="system" size="30"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H0z-aP-l2R">
+                                <rect key="frame" x="28" y="205" width="64" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="HU4-dv-2Py"/>
+                                    <constraint firstAttribute="width" constant="60" id="fZj-ea-btX"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Age:" id="kIl-pk-XqL">
+                                    <font key="font" metaFont="system" size="21"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XwX-Wj-ewK">
+                                <rect key="frame" x="88" y="205" width="92" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="2eE-eg-cde"/>
+                                    <constraint firstAttribute="height" constant="25" id="PMm-wP-Ocb"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="AgeValue" id="GyY-49-UmA">
+                                    <font key="font" metaFont="system" size="21"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="t2G-f0-hwK">
+                                <rect key="frame" x="28" y="170" width="64" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="XGW-KO-cq6"/>
+                                    <constraint firstAttribute="height" constant="25" id="dGD-yZ-dqE"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Race:" id="LEw-1h-MtG">
+                                    <font key="font" metaFont="system" size="21"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ovl-7B-sRD">
+                                <rect key="frame" x="88" y="170" width="92" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Wo2-KG-Hxe"/>
+                                    <constraint firstAttribute="width" constant="88" id="pCE-Ph-WPB"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="RaceValue" id="ZGz-xO-afF">
+                                    <font key="font" metaFont="system" size="21"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -242,15 +294,27 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="5au-tj-4bR" firstAttribute="top" secondItem="t5z-Ty-2yq" secondAttribute="top" id="0SJ-Ev-XX6"/>
-                            <constraint firstItem="lpJ-SG-Can" firstAttribute="centerY" secondItem="t5z-Ty-2yq" secondAttribute="centerY" id="8yq-0t-Ej1"/>
+                            <constraint firstItem="t2G-f0-hwK" firstAttribute="leading" secondItem="H0z-aP-l2R" secondAttribute="leading" id="2WO-Tn-aUv"/>
+                            <constraint firstItem="H0z-aP-l2R" firstAttribute="leading" secondItem="UJQ-HS-z4v" secondAttribute="leading" constant="10" id="DSs-uR-GWs"/>
                             <constraint firstAttribute="bottom" secondItem="5au-tj-4bR" secondAttribute="bottom" id="FZx-U2-Aoc"/>
                             <constraint firstItem="5au-tj-4bR" firstAttribute="leading" secondItem="t5z-Ty-2yq" secondAttribute="leading" id="GMC-eB-6y6"/>
-                            <constraint firstItem="lpJ-SG-Can" firstAttribute="centerX" secondItem="t5z-Ty-2yq" secondAttribute="centerX" id="NVz-rD-mFK"/>
+                            <constraint firstItem="H0z-aP-l2R" firstAttribute="top" secondItem="UJQ-HS-z4v" secondAttribute="bottom" id="Kj1-Gj-GVa"/>
+                            <constraint firstItem="UJQ-HS-z4v" firstAttribute="top" secondItem="t5z-Ty-2yq" secondAttribute="top" constant="20" id="NFU-JO-djf"/>
                             <constraint firstAttribute="trailing" secondItem="5au-tj-4bR" secondAttribute="trailing" id="Ptc-QF-nsq"/>
+                            <constraint firstItem="XwX-Wj-ewK" firstAttribute="leading" secondItem="H0z-aP-l2R" secondAttribute="trailing" id="VR5-5b-bK8"/>
+                            <constraint firstItem="Ovl-7B-sRD" firstAttribute="top" secondItem="XwX-Wj-ewK" secondAttribute="bottom" constant="10" id="ZHr-WS-rZX"/>
+                            <constraint firstItem="XwX-Wj-ewK" firstAttribute="top" secondItem="UJQ-HS-z4v" secondAttribute="bottom" id="m9H-AK-B1s"/>
+                            <constraint firstItem="Ovl-7B-sRD" firstAttribute="leading" secondItem="t2G-f0-hwK" secondAttribute="trailing" id="rrA-8t-Q33"/>
+                            <constraint firstItem="UJQ-HS-z4v" firstAttribute="leading" secondItem="t5z-Ty-2yq" secondAttribute="leading" constant="20" id="s7W-xp-8iK"/>
+                            <constraint firstItem="t2G-f0-hwK" firstAttribute="top" secondItem="H0z-aP-l2R" secondAttribute="bottom" constant="10" id="tbt-05-UWX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="lpJ-SG-Can" id="2g6-FY-wF9"/>
+                        <outlet property="ageLabel" destination="H0z-aP-l2R" id="BDf-dq-h8A"/>
+                        <outlet property="ageValue" destination="XwX-Wj-ewK" id="E6A-5J-drv"/>
+                        <outlet property="nameValue" destination="UJQ-HS-z4v" id="O0x-ta-RTi"/>
+                        <outlet property="raceLabel" destination="t2G-f0-hwK" id="FSc-A8-fdE"/>
+                        <outlet property="raceValue" destination="Ovl-7B-sRD" id="BZk-O1-db5"/>
                     </connections>
                 </viewController>
                 <customObject id="MSN-mH-FM6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -259,7 +323,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BilboAndGendalf" width="1392" height="586"/>
+        <image name="BilboAndGandalf" width="1392" height="586"/>
         <image name="CompanyClimbing" width="1297" height="1151"/>
         <image name="DragonAndBilbo" width="1845" height="622"/>
         <image name="DwarvesAndHiddenDoor" width="1648" height="1080"/>

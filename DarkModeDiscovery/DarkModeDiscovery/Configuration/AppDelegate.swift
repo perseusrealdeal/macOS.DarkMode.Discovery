@@ -12,7 +12,7 @@
 //
 
 import Cocoa
-let USE = true
+
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
