@@ -291,6 +291,27 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROl-j3-hCf">
+                                <rect key="frame" x="30" y="10" width="315" height="150"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="VIP-te-TPG">
+                                    <rect key="frame" x="0.0" y="0.0" width="315" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="O2l-r0-zBr">
+                                            <rect key="frame" x="0.0" y="0.0" width="315" height="150"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="315" height="150"/>
+                                            <size key="maxSize" width="450" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="oHO-tt-fGB">
+                                    <rect key="frame" x="252" y="2" width="16" height="146"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="5au-tj-4bR" firstAttribute="top" secondItem="t5z-Ty-2yq" secondAttribute="top" id="0SJ-Ev-XX6"/>
@@ -298,11 +319,15 @@
                             <constraint firstItem="H0z-aP-l2R" firstAttribute="leading" secondItem="UJQ-HS-z4v" secondAttribute="leading" constant="10" id="DSs-uR-GWs"/>
                             <constraint firstAttribute="bottom" secondItem="5au-tj-4bR" secondAttribute="bottom" id="FZx-U2-Aoc"/>
                             <constraint firstItem="5au-tj-4bR" firstAttribute="leading" secondItem="t5z-Ty-2yq" secondAttribute="leading" id="GMC-eB-6y6"/>
+                            <constraint firstItem="ROl-j3-hCf" firstAttribute="width" secondItem="t5z-Ty-2yq" secondAttribute="width" multiplier="0.7" id="J45-bz-ZWJ"/>
+                            <constraint firstItem="ROl-j3-hCf" firstAttribute="leading" secondItem="t2G-f0-hwK" secondAttribute="leading" id="K99-fN-fc0"/>
                             <constraint firstItem="H0z-aP-l2R" firstAttribute="top" secondItem="UJQ-HS-z4v" secondAttribute="bottom" id="Kj1-Gj-GVa"/>
                             <constraint firstItem="UJQ-HS-z4v" firstAttribute="top" secondItem="t5z-Ty-2yq" secondAttribute="top" constant="20" id="NFU-JO-djf"/>
                             <constraint firstAttribute="trailing" secondItem="5au-tj-4bR" secondAttribute="trailing" id="Ptc-QF-nsq"/>
+                            <constraint firstAttribute="bottom" secondItem="ROl-j3-hCf" secondAttribute="bottom" constant="10" id="Uns-bP-AAc"/>
                             <constraint firstItem="XwX-Wj-ewK" firstAttribute="leading" secondItem="H0z-aP-l2R" secondAttribute="trailing" id="VR5-5b-bK8"/>
                             <constraint firstItem="Ovl-7B-sRD" firstAttribute="top" secondItem="XwX-Wj-ewK" secondAttribute="bottom" constant="10" id="ZHr-WS-rZX"/>
+                            <constraint firstItem="ROl-j3-hCf" firstAttribute="top" secondItem="t2G-f0-hwK" secondAttribute="bottom" constant="10" id="dUb-et-Kht"/>
                             <constraint firstItem="XwX-Wj-ewK" firstAttribute="top" secondItem="UJQ-HS-z4v" secondAttribute="bottom" id="m9H-AK-B1s"/>
                             <constraint firstItem="Ovl-7B-sRD" firstAttribute="leading" secondItem="t2G-f0-hwK" secondAttribute="trailing" id="rrA-8t-Q33"/>
                             <constraint firstItem="UJQ-HS-z4v" firstAttribute="leading" secondItem="t5z-Ty-2yq" secondAttribute="leading" constant="20" id="s7W-xp-8iK"/>
@@ -312,6 +337,7 @@
                     <connections>
                         <outlet property="ageLabel" destination="H0z-aP-l2R" id="BDf-dq-h8A"/>
                         <outlet property="ageValue" destination="XwX-Wj-ewK" id="E6A-5J-drv"/>
+                        <outlet property="bioTextView" destination="O2l-r0-zBr" id="Fb0-RK-7Ux"/>
                         <outlet property="nameValue" destination="UJQ-HS-z4v" id="O0x-ta-RTi"/>
                         <outlet property="raceLabel" destination="t2G-f0-hwK" id="FSc-A8-fdE"/>
                         <outlet property="raceValue" destination="Ovl-7B-sRD" id="BZk-O1-db5"/>

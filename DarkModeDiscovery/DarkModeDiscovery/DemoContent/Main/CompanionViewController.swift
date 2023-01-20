@@ -23,6 +23,8 @@ class CompanionViewController: NSViewController {
     @IBOutlet weak var raceLabel: NSTextField!
     @IBOutlet weak var raceValue: NSTextField!
 
+    @IBOutlet var bioTextView: NSTextView!
+
     var companion: Companion? {
         didSet {
             guard isViewLoaded else { return }
@@ -44,6 +46,9 @@ class CompanionViewController: NSViewController {
         ageLabel.textColor = NSColor.white
         raceLabel.textColor = NSColor.white
 
+        bioTextView.backgroundColor = NSColor.clear
+        bioTextView.textColor = NSColor.white
+
         updateCompanionView(nil)
     }
 
@@ -52,6 +57,7 @@ class CompanionViewController: NSViewController {
             nameValue.stringValue = ""
             ageValue.stringValue = ""
             raceValue.stringValue = ""
+            bioTextView.string = ""
 
             ageLabel.isHidden = true
             raceLabel.isHidden = true
@@ -65,5 +71,7 @@ class CompanionViewController: NSViewController {
         nameValue.stringValue = friend.name
         ageValue.stringValue = friend.age
         raceValue.stringValue = friend.race.single
+
+        bioTextView.string = friend.characteristics
     }
 }
