@@ -38,12 +38,10 @@ class CompanionViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.wantsLayer = true
-        self.view.layer?.backgroundColor = NSColor.blue.cgColor
+        bioTextView.backgroundColor = .clear
+        bioTextView.textColor = .white
 
-        bioTextView.backgroundColor = NSColor.clear
-
-        darkModeObserver.action = { newStyle in self.setDarkModeSensitiveColours() }
+        darkModeObserver.action = { _ in self.setDarkModeSensitiveColours() }
 
         setDarkModeSensitiveColours()
         updateCompanionView(nil)
@@ -73,8 +71,6 @@ class CompanionViewController: NSViewController {
     }
 
     private func setDarkModeSensitiveColours() {
-        self.bioTextView.textColor = .white
-
         self.nameValue.textColor = .perseusGray6
         self.ageValue.textColor = .perseusGray6
         self.raceValue.textColor = .perseusGray6
