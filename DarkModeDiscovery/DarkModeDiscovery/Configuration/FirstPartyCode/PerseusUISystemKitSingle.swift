@@ -607,6 +607,21 @@ public enum ScaleImageViewMacOS: Int, CustomStringConvertible {
             return ".Aspect Fill cliped to bounds."
         }
     }
+
+    public var value: NSImageScaling {
+        switch self {
+        case .scaleNone:
+            return .scaleNone
+        case .axesIndependently:
+            return .scaleAxesIndependently
+        case .proportionallyUpOrDown:
+            return .scaleProportionallyUpOrDown
+        case .proportionallyDown:
+            return .scaleProportionallyDown
+        case .proportionallyClipToBounds:
+            return .scaleNone
+        }
+    }
 }
 
 @IBDesignable
@@ -629,13 +644,28 @@ public class DarkModeImageView: NSImageView {
     @IBInspectable
     var aspectFillClipToBounds: Bool = false
 
+    var customScale: ScaleImageViewMacOS = .scaleNone {
+        didSet {
+            guard customScale != .proportionallyClipToBounds else {
+                self.aspectFillClipToBounds = true
+                self.imageScaling = .scaleNone
+                return
+            }
+
+            self.aspectFillClipToBounds = false
+            self.imageScaling = customScale.value
+        }
+    }
+
     private(set) var darkModeObserver: DarkModeObserver?
 
     override public func awakeFromNib() {
+        guard aspectFillClipToBounds else { return }
+
         self.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         self.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
 
-        if aspectFillClipToBounds { self.imageScaling = .scaleNone }
+        self.imageScaling = .scaleNone
     }
 
     override init(frame: CGRect) {

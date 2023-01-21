@@ -17,6 +17,7 @@ class PreferencesWindowController: NSWindowController, NSWindowDelegate {
 
     override func windowDidLoad() {
         super.windowDidLoad()
+        window?.appearance = NSAppearance(named: NSAppearance.Name.vibrantDark)
     }
 
     func windowShouldClose(_ sender: NSWindow) -> Bool {

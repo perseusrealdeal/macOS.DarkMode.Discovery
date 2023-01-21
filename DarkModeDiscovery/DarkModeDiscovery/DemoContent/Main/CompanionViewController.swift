@@ -25,6 +25,8 @@ class CompanionViewController: NSViewController {
 
     @IBOutlet var bioTextView: NSTextView!
 
+    let darkModeObserver = DarkModeObserver()
+
     var companion: Companion? {
         didSet {
             guard isViewLoaded else { return }
@@ -39,16 +41,11 @@ class CompanionViewController: NSViewController {
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.blue.cgColor
 
-        nameValue.textColor = NSColor.white
-        ageValue.textColor = NSColor.white
-        raceValue.textColor = NSColor.white
-
-        ageLabel.textColor = NSColor.white
-        raceLabel.textColor = NSColor.white
-
         bioTextView.backgroundColor = NSColor.clear
-        bioTextView.textColor = NSColor.white
 
+        darkModeObserver.action = { newStyle in self.setDarkModeSensitiveColours() }
+
+        setDarkModeSensitiveColours()
         updateCompanionView(nil)
     }
 
@@ -73,5 +70,16 @@ class CompanionViewController: NSViewController {
         raceValue.stringValue = friend.race.single
 
         bioTextView.string = friend.characteristics
+    }
+
+    private func setDarkModeSensitiveColours() {
+        self.bioTextView.textColor = .white
+
+        self.nameValue.textColor = .perseusGray6
+        self.ageValue.textColor = .perseusGray6
+        self.raceValue.textColor = .perseusGray6
+
+        self.ageLabel.textColor = .perseusGray6
+        self.raceLabel.textColor = .perseusGray6
     }
 }

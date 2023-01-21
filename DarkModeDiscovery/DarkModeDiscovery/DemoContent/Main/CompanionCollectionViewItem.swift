@@ -44,9 +44,9 @@ class CompanionCollectionViewItem: NSCollectionViewItem {
     }
 
     func updateCompanionView() {
-        guard let companion = self.companion else { return }
+        guard let friend = self.companion else { return }
 
-        textField?.stringValue = companion.name
-        imageView?.image = NSImage(named: companion.iconName)
+        textField?.stringValue = friend.name
+        imageView?.image = NSImage(named: friend.iconName)
     }
 }

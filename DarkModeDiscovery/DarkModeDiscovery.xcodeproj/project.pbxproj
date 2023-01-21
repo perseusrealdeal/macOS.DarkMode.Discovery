@@ -139,13 +139,6 @@
 			path = Preferences;
 			sourceTree = "<group>";
 		};
-		4B6C3D22296BFAAF001299E6 /* Colours */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Colours;
-			sourceTree = "<group>";
-		};
 		4BD028FE295EF05800E294E9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				4BD028FE295EF05800E294E9 /* Main */,
-				4B6C3D22296BFAAF001299E6 /* Colours */,
 				4B6A98B4295C7EB800965FAF /* Preferences */,
 				E0A9D8B32895996100B78B21 /* Model */,
 			);

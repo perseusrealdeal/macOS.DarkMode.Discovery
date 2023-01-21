@@ -10,7 +10,7 @@
         <scene sceneID="MXA-Sv-x0g">
             <objects>
                 <windowController id="zEn-H0-fel" customClass="MainWindowController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="macos.darkmode.discovery" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="t5D-0x-IF4">
+                    <window key="window" title="macOS.DarkMode.Discovery" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="t5D-0x-IF4">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <rect key="contentRect" x="99" y="99" width="480" height="500"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
@@ -256,9 +256,9 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XwX-Wj-ewK">
-                                <rect key="frame" x="88" y="205" width="92" height="25"/>
+                                <rect key="frame" x="88" y="205" width="103" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="88" id="2eE-eg-cde"/>
+                                    <constraint firstAttribute="width" constant="99" id="2eE-eg-cde"/>
                                     <constraint firstAttribute="height" constant="25" id="PMm-wP-Ocb"/>
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="AgeValue" id="GyY-49-UmA">
@@ -280,10 +280,10 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ovl-7B-sRD">
-                                <rect key="frame" x="88" y="170" width="92" height="25"/>
+                                <rect key="frame" x="88" y="170" width="103" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Wo2-KG-Hxe"/>
-                                    <constraint firstAttribute="width" constant="88" id="pCE-Ph-WPB"/>
+                                    <constraint firstAttribute="width" constant="99" id="pCE-Ph-WPB"/>
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="RaceValue" id="ZGz-xO-afF">
                                     <font key="font" metaFont="system" size="21"/>
@@ -297,7 +297,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="315" height="150"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="O2l-r0-zBr">
+                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" id="O2l-r0-zBr">
                                             <rect key="frame" x="0.0" y="0.0" width="315" height="150"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
