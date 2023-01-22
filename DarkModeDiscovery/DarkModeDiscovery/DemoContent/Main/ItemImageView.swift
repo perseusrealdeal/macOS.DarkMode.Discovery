@@ -16,13 +16,12 @@ import Cocoa
 class ItemImageView: NSImageView {
 
     override var image: NSImage? {
+        get {
+            return super.image
+        }
         set {
             super.image = newValue
             self.layer?.contents = newValue
-        }
-
-        get {
-            return super.image
         }
     }
 
@@ -41,14 +40,10 @@ class ItemImageView: NSImageView {
     }
 
     private func configure() {
-        self.wantsLayer = true
-
         self.layer = CALayer()
-        self.layer?.contentsGravity = CALayerContentsGravity.resizeAspect
-
         self.layer?.cornerRadius = 25.0
         self.layer?.masksToBounds = true
 
-        self.imageScaling = .scaleAxesIndependently
+        self.wantsLayer = true
     }
 }

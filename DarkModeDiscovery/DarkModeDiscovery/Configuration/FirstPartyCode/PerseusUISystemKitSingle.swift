@@ -649,6 +649,7 @@ public class DarkModeImageView: NSImageView {
             guard customScale != .proportionallyClipToBounds else {
                 self.aspectFillClipToBounds = true
                 self.imageScaling = .scaleNone
+
                 return
             }
 
@@ -661,9 +662,6 @@ public class DarkModeImageView: NSImageView {
 
     override public func awakeFromNib() {
         guard aspectFillClipToBounds else { return }
-
-        self.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
-        self.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
 
         self.imageScaling = .scaleNone
     }
@@ -696,6 +694,9 @@ public class DarkModeImageView: NSImageView {
             super.draw(dirtyRect)
             return
         }
+
+        self.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        self.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
 
         // Get variables
 

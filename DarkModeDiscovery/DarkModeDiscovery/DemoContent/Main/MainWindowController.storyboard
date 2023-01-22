@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zEn-H0-fel">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zEn-H0-fel">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -70,7 +70,7 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="1lV-dv-mcf"/>
-                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="260" id="sbg-cl-pU1"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="265" id="sbg-cl-pU1"/>
                                                 </constraints>
                                                 <connections>
                                                     <segue destination="gk4-fw-Opv" kind="embed" identifier="" id="s03-Pr-et1"/>
@@ -167,7 +167,7 @@
                             </imageView>
                             <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oe2-DN-uNG">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="XTU-e3-VL1">
+                                <clipView key="contentView" copiesOnScroll="NO" id="XTU-e3-VL1">
                                     <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -185,11 +185,11 @@
                                         </collectionView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="sBS-IT-gd3">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="sBS-IT-gd3">
                                     <rect key="frame" x="-100" y="-100" width="233" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="fBE-9x-zZB">
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="fBE-9x-zZB">
                                     <rect key="frame" x="234" y="1" width="15" height="143"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -225,11 +225,6 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5au-tj-4bR" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="xzx-Gy-l7r"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="CompanyClimbing"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="BilboAndGandalf"/>
-                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UJQ-HS-z4v">
                                 <rect key="frame" x="18" y="230" width="254" height="50"/>
@@ -307,7 +302,11 @@
                                         </textView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="oHO-tt-fGB">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="L5R-g5-gzl">
+                                    <rect key="frame" x="-100" y="-100" width="100" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="oHO-tt-fGB">
                                     <rect key="frame" x="252" y="2" width="16" height="146"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -338,6 +337,7 @@
                         <outlet property="ageLabel" destination="H0z-aP-l2R" id="BDf-dq-h8A"/>
                         <outlet property="ageValue" destination="XwX-Wj-ewK" id="E6A-5J-drv"/>
                         <outlet property="bioTextView" destination="O2l-r0-zBr" id="Fb0-RK-7Ux"/>
+                        <outlet property="imageView" destination="5au-tj-4bR" id="GiW-GX-LHu"/>
                         <outlet property="nameValue" destination="UJQ-HS-z4v" id="O0x-ta-RTi"/>
                         <outlet property="raceLabel" destination="t2G-f0-hwK" id="FSc-A8-fdE"/>
                         <outlet property="raceValue" destination="Ovl-7B-sRD" id="BZk-O1-db5"/>
@@ -349,8 +349,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BilboAndGandalf" width="1392" height="586"/>
-        <image name="CompanyClimbing" width="1297" height="1151"/>
         <image name="DragonAndBilbo" width="1845" height="622"/>
         <image name="DwarvesAndHiddenDoor" width="1648" height="1080"/>
         <image name="Erebor" width="1270" height="293"/>

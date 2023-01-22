@@ -25,6 +25,8 @@ class CompanionViewController: NSViewController {
 
     @IBOutlet var bioTextView: NSTextView!
 
+    @IBOutlet weak var imageView: DarkModeImageView!
+
     let darkModeObserver = DarkModeObserver()
 
     var companion: Companion? {
@@ -38,8 +40,11 @@ class CompanionViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        imageView.imageLight = NSImage(named: "BilboAndGandalf")
+        imageView.imageDark = NSImage(named: "CompanyClimbing")
+        imageView.customScale = .proportionallyClipToBounds
+
         bioTextView.backgroundColor = .clear
-        bioTextView.textColor = .white
 
         darkModeObserver.action = { _ in self.setDarkModeSensitiveColours() }
 
@@ -71,11 +76,13 @@ class CompanionViewController: NSViewController {
     }
 
     private func setDarkModeSensitiveColours() {
-        self.nameValue.textColor = .perseusGray6
-        self.ageValue.textColor = .perseusGray6
-        self.raceValue.textColor = .perseusGray6
+        self.ageLabel.textColor = .customLabel
+        self.raceLabel.textColor = .customLabel
 
-        self.ageLabel.textColor = .perseusGray6
-        self.raceLabel.textColor = .perseusGray6
+        self.nameValue.textColor = .customShortText
+        self.ageValue.textColor = .customShortText
+        self.raceValue.textColor = .customShortText
+
+        self.bioTextView.textColor = .customLongText
     }
 }
