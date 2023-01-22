@@ -22,5 +22,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         #endif
 
         AppearanceService.recalculateStyleIfNeeded()
+
+        // MARK: - Issue: IB Window Minimum Content Size doesn't apply correctly.
+        // macOS High Sierra (10.13.6), Xcode 10.1
+        if var frame = NSApplication.shared.mainWindow?.frame {
+            frame.size = NSSize(width: 480, height: 500)
+            NSApplication.shared.mainWindow?.setFrame(frame, display: true)
+        }
     }
 }
