@@ -24,6 +24,8 @@ let storyboard = NSStoryboard(name: String(describing: MainWindowController.self
 let screen = storyboard.instantiateInitialController() as? NSWindowController
 let mainMenu = NSNib(nibNamed: NSNib.Name("MainMenu"), bundle: nil)
 
+// setMainWindow()
+
 // MARK: - Run the app
 
 app.setActivationPolicy(.regular)
@@ -35,3 +37,21 @@ app.delegate = appDelegate as? NSApplicationDelegate
 
 app.activate(ignoringOtherApps: true)
 app.run()
+
+func setMainWindow() {
+    if let screen = NSScreen.main,
+       NSApplication.shared.windows.first?.windowController is MainWindowController,
+       var frame = NSApplication.shared.windows.first?.frame {
+
+        let height: CGFloat = 500 // Default main window height
+        let width: CGFloat = 800 // Default main window width
+
+        let origin_x = screen.frame.size.width / 2 - width / 2
+        let origin_y = screen.frame.size.height / 2 - height / 2
+
+        frame.size = NSSize(width: width, height: height)
+        frame.origin = NSPoint(x: origin_x, y: origin_y)
+
+        NSApplication.shared.windows.first?.setFrame(frame, display: true)
+    }
+}
