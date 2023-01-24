@@ -23,4 +23,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         AppearanceService.recalculateStyleIfNeeded()
     }
+
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
 }
