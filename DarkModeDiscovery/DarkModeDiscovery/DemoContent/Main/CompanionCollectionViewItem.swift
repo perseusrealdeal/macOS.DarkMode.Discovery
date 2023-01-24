@@ -20,9 +20,7 @@ class CompanionCollectionViewItem: NSCollectionViewItem {
             super.isSelected = isSelected
 
             imageView?.layer?.borderWidth = isSelected ? 5.0 : 0.0
-            imageView?.layer?.borderColor = NSColor.white.cgColor
-
-            textField?.textColor = isSelected ? NSColor.white : NSColor.black
+            callDarkModeSensitiveColours()
         }
     }
 
@@ -34,9 +32,14 @@ class CompanionCollectionViewItem: NSCollectionViewItem {
         }
     }
 
+    let darkModeObserver = DarkModeObserver()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        darkModeObserver.action = { _ in self.callDarkModeSensitiveColours() }
+
+        callDarkModeSensitiveColours()
         updateCompanionView()
     }
 
@@ -45,5 +48,10 @@ class CompanionCollectionViewItem: NSCollectionViewItem {
 
         textField?.stringValue = friend.name
         imageView?.image = NSImage(named: friend.iconName)
+    }
+
+    private func callDarkModeSensitiveColours() {
+        imageView?.layer?.borderColor = NSColor.customChosenOne.cgColor
+        textField?.textColor = isSelected ? NSColor.customChosenOne : NSColor.black
     }
 }

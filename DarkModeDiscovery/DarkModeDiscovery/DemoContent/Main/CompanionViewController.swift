@@ -46,9 +46,9 @@ class CompanionViewController: NSViewController {
 
         bioTextView.backgroundColor = .clear
 
-        darkModeObserver.action = { _ in self.setDarkModeSensitiveColours() }
+        darkModeObserver.action = { _ in self.callDarkModeSensitiveColours() }
 
-        setDarkModeSensitiveColours()
+        callDarkModeSensitiveColours()
         updateCompanionView(nil)
     }
 
@@ -75,7 +75,7 @@ class CompanionViewController: NSViewController {
         bioTextView.string = friend.characteristics
     }
 
-    private func setDarkModeSensitiveColours() {
+    private func callDarkModeSensitiveColours() {
         self.ageLabel.textColor = .customLabel
         self.raceLabel.textColor = .customLabel
 

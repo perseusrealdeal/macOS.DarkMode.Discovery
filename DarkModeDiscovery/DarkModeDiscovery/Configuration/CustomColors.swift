@@ -15,14 +15,22 @@ import AppKit
 
 public protocol CustomColorsProtocol {
 
+    static var customChosenOne: NSColor { get }
+
     static var customLabel: NSColor { get }
 
     static var customShortText: NSColor { get }
 
     static var customLongText: NSColor { get }
+
 }
 
 extension NSColor: CustomColorsProtocol {
+
+    public static var customChosenOne: NSColor {
+        return AppearanceService.shared.style == .light ?
+            rgba255(255, 255, 255) : rgba255(255, 255, 255, 0.6)
+    }
 
     public static var customLabel: NSColor {
         return AppearanceService.shared.style == .light ?
