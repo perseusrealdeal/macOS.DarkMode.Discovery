@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E00F837C288A4A04000D0A01"
-               BuildableName = "DarkModeDiscovery.app"
+               BuildableName = "Dark Mode Discovery.app"
                BlueprintName = "DarkModeDiscovery"
                ReferencedContainer = "container:DarkModeDiscovery.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E00F838D288A4A0C000D0A01"
+               BlueprintIdentifier = "4B0158E229103C0D009F1803"
                BuildableName = "DarkModeDiscoveryTests.xctest"
                BlueprintName = "DarkModeDiscoveryTests"
                ReferencedContainer = "container:DarkModeDiscovery.xcodeproj">
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E00F837C288A4A04000D0A01"
-            BuildableName = "DarkModeDiscovery.app"
+            BuildableName = "Dark Mode Discovery.app"
             BlueprintName = "DarkModeDiscovery"
             ReferencedContainer = "container:DarkModeDiscovery.xcodeproj">
          </BuildableReference>
@@ -90,7 +90,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E00F837C288A4A04000D0A01"
-            BuildableName = "DarkModeDiscovery.app"
+            BuildableName = "Dark Mode Discovery.app"
             BlueprintName = "DarkModeDiscovery"
             ReferencedContainer = "container:DarkModeDiscovery.xcodeproj">
          </BuildableReference>

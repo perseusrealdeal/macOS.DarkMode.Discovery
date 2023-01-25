@@ -409,11 +409,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.DarkModeDiscoveryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarkModeDiscovery.app/Contents/MacOS/DarkModeDiscovery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dark Mode Discovery.app/Contents/MacOS/Dark Mode Discovery";
 			};
 			name = Debug;
 		};
@@ -433,11 +433,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.DarkModeDiscoveryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarkModeDiscovery.app/Contents/MacOS/DarkModeDiscovery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dark Mode Discovery.app/Contents/MacOS/Dark Mode Discovery";
 			};
 			name = Release;
 		};
