@@ -23,6 +23,7 @@
 		4B6C3D2C29704130001299E6 /* ItemImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C3D2B29704130001299E6 /* ItemImageView.swift */; };
 		4B6F459C2965AD1200859528 /* CompanionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F459B2965AD1200859528 /* CompanionViewController.swift */; };
 		4B7DD3B0297D33B700172BD4 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DD3AF297D33B700172BD4 /* CustomColors.swift */; };
+		4B829B2729812D7F00FCE9FF /* TheMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B829B2629812D7F00FCE9FF /* TheMenu.swift */; };
 		E002B00F288E9A8D00E46356 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E002B00E288E9A8D00E46356 /* README.md */; };
 		E002B011288E9A9200E46356 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E002B010288E9A9200E46356 /* LICENSE */; };
 		E002B013288E9AAD00E46356 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E002B012288E9AAD00E46356 /* .gitignore */; };
@@ -67,6 +68,7 @@
 		4B6C3D2B29704130001299E6 /* ItemImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImageView.swift; sourceTree = "<group>"; };
 		4B6F459B2965AD1200859528 /* CompanionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionViewController.swift; sourceTree = "<group>"; };
 		4B7DD3AF297D33B700172BD4 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		4B829B2629812D7F00FCE9FF /* TheMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMenu.swift; sourceTree = "<group>"; };
 		E002B00E288E9A8D00E46356 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E002B010288E9A9200E46356 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E002B012288E9AAD00E46356 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				4B3A67E62965932D0024077F /* CompanionCollectionViewItem.xib */,
 				4B6F459B2965AD1200859528 /* CompanionViewController.swift */,
 				4B6C3D2B29704130001299E6 /* ItemImageView.swift */,
+				4B829B2629812D7F00FCE9FF /* TheMenu.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				4B6F459C2965AD1200859528 /* CompanionViewController.swift in Sources */,
 				E0A29354288E70B200F467E8 /* AppDelegate.swift in Sources */,
 				E0A2934C288E520000F467E8 /* MainWindowController.swift in Sources */,
+				4B829B2729812D7F00FCE9FF /* TheMenu.swift in Sources */,
 				4B3A67E329658C0A0024077F /* CompanionListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
