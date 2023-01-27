@@ -14,6 +14,8 @@
 
 This project is used to prove a set of Perseus Dark Mode capabilities.
 
+![Hobbit](https://user-images.githubusercontent.com/50202963/214910458-781beb39-c6fe-4b73-b7df-eec9f1bfc708.gif)
+
 # Requirements
 
 - Xcode 10.1+ (macOS High Sierra - 10.13.6)
