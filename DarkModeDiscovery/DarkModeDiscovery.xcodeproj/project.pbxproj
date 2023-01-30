@@ -16,7 +16,6 @@
 		4B3A67E82965932D0024077F /* CompanionCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B3A67E62965932D0024077F /* CompanionCollectionViewItem.xib */; };
 		4B44EDFB294661E80084C192 /* main.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B44EDFA294661E80084C192 /* main.yml */; };
 		4B44EE0129466A320084C192 /* DarkModeSwitching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */; };
-		4B44EE0229466A320084C192 /* PerseusDarkModeSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EDFF29466A320084C192 /* PerseusDarkModeSingle.swift */; };
 		4B44EE0329466A320084C192 /* PerseusUISystemKitSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */; };
 		4B6A98B6295C83E100965FAF /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A98B5295C83E100965FAF /* Preferences.storyboard */; };
 		4B6A98BB295CAF3400965FAF /* PreferencesWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A98B9295CAF3400965FAF /* PreferencesWC.swift */; };
@@ -60,7 +59,6 @@
 		4B3A67E62965932D0024077F /* CompanionCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanionCollectionViewItem.xib; sourceTree = "<group>"; };
 		4B44EDFA294661E80084C192 /* main.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.yml; path = ../.github/workflows/main.yml; sourceTree = "<group>"; };
 		4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkModeSwitching.swift; sourceTree = "<group>"; };
-		4B44EDFF29466A320084C192 /* PerseusDarkModeSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerseusDarkModeSingle.swift; sourceTree = "<group>"; };
 		4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerseusUISystemKitSingle.swift; sourceTree = "<group>"; };
 		4B55925828F7422400D38256 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B6A98B5295C83E100965FAF /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */,
-				4B44EDFF29466A320084C192 /* PerseusDarkModeSingle.swift */,
 				4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */,
 			);
 			path = FirstPartyCode;
@@ -367,7 +364,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B44EE0129466A320084C192 /* DarkModeSwitching.swift in Sources */,
-				4B44EE0229466A320084C192 /* PerseusDarkModeSingle.swift in Sources */,
 				E06FED13289A86ED00538B55 /* Race.swift in Sources */,
 				E01D2D3A289A76A6009B932F /* Companion.swift in Sources */,
 				4B44EE0329466A320084C192 /* PerseusUISystemKitSingle.swift in Sources */,
