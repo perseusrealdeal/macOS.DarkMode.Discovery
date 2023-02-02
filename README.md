@@ -12,7 +12,7 @@
 
 # In brief
 
-This project is used to prove a set of Perseus Dark Mode capabilities.
+> This project is used to prove a set of Perseus Dark Mode capabilities.
 
 ![Hobbit](https://user-images.githubusercontent.com/50202963/214910458-781beb39-c6fe-4b73-b7df-eec9f1bfc708.gif)
 
@@ -41,7 +41,7 @@ Copyright © 7530 - 7531 PerseusRealDeal
 - The year starts from the creation of the world according to a Slavic calendar.
 - September, the 1st of Slavic year.
 
-Have a look at [LICENSE](https://github.com/perseusrealdeal/macos.darkmode.discovery/blob/a7628a6aaf8a907c69ebe69ef3e3ad899a546486/LICENSE) for details.
+Have a look at [LICENSE](/LICENSE) for details.
 
 TODO: Add some special words about app's theme images and text that had been found on the seas of Internet.
 
@@ -49,4 +49,4 @@ TODO: Add some special words about app's theme images and text that had been fou
 
 This app called as `DarkModeDiscovery` was written at Novosibirsk by Mikhail Zhigulin i.e. me, mzhigulin@gmail.com.
 
-Mostly I'd like thank my lovely parents for supporting me in all my ways.
+> Mostly I'd like thank my lovely parents for supporting me in all my ways.
