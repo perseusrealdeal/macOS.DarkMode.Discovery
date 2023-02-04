@@ -1,5 +1,5 @@
 //
-//  PreferencesWindowController.swift
+//  PreferencesWindowController.swift, Preferences.storyboard
 //  DarkModeDiscovery
 //
 //  Created by Mikhail Zhigulin in 7531.

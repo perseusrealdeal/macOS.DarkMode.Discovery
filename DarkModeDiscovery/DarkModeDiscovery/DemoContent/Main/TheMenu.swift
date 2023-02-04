@@ -1,5 +1,5 @@
 //
-//  TheMenu.swift
+//  TheMenu.swift, MainMenu.xib
 //  DarkModeDiscovery
 //
 //  Created by Mikhail Zhigulin in 7531.

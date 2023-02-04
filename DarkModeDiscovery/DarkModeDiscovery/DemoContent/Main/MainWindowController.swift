@@ -1,5 +1,5 @@
 //
-//  MainWindowController.swift
+//  MainWindowController.swift, MainWindowController.storyboard
 //  DarkModeDiscovery
 //
 //  Created by Mikhail Zhigulin in 7530.

@@ -1,5 +1,5 @@
 //
-//  CompanionCollectionViewItem.swift
+//  CompanionCollectionViewItem.swift, CompanionCollectionViewItem.xib
 //  DarkModeDiscovery
 //
 //  Created by Mikhail Zhigulin in 7531.
