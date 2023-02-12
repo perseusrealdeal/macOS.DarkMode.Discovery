@@ -10,8 +10,8 @@
         <scene sceneID="plz-Dn-1Nb">
             <objects>
                 <windowController id="VHw-gu-uhd" customClass="PreferencesWindowController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="dQe-r5-h6F">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="dQe-r5-h6F">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="163" y="199" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
@@ -20,83 +20,53 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="bEF-YE-Gq7" kind="relationship" relationship="window.shadowedContentViewController" id="hjG-U6-vtA"/>
+                        <segue destination="2G3-pC-M2U" kind="relationship" relationship="window.shadowedContentViewController" id="y5c-Bk-J3O"/>
                     </connections>
                 </windowController>
                 <customObject id="Foj-6z-ksK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="671" y="-148"/>
         </scene>
-        <!--Tab View Controller-->
-        <scene sceneID="zbM-gc-sDJ">
-            <objects>
-                <tabViewController tabStyle="toolbar" id="bEF-YE-Gq7" sceneMemberID="viewController">
-                    <tabViewItems>
-                        <tabViewItem identifier="" image="NSInfo" id="prl-F8-0KV"/>
-                        <tabViewItem identifier="" image="NSAdvanced" id="ule-h2-pwi"/>
-                    </tabViewItems>
-                    <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
-                    <tabView key="tabView" type="noTabsNoBorder" id="snC-pm-NgX">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <font key="font" metaFont="message"/>
-                        <connections>
-                            <outlet property="delegate" destination="bEF-YE-Gq7" id="rXj-a8-Ooc"/>
-                        </connections>
-                    </tabView>
-                    <connections>
-                        <outlet property="tabView" destination="snC-pm-NgX" id="guE-yt-ok4"/>
-                        <segue destination="2G3-pC-M2U" kind="relationship" relationship="tabItems" id="ren-Qb-eL9"/>
-                        <segue destination="UCR-eO-0We" kind="relationship" relationship="tabItems" id="7In-7L-jqc"/>
-                    </connections>
-                </tabViewController>
-                <customObject id="aBz-YS-jLj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="671" y="313"/>
-        </scene>
         <!--General-->
         <scene sceneID="zYJ-So-2PA">
             <objects>
-                <viewController title="General" id="2G3-pC-M2U" customClass="GeneralPreferencesVC" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="General" id="2G3-pC-M2U" customClass="PreferencesViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="5RK-HS-UFI">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="228"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-uj-olC">
-                                <rect key="frame" x="20" y="148" width="410" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <view key="contentView" ambiguous="YES" id="iaV-jv-KXw">
-                                    <rect key="frame" x="1" y="1" width="408" height="58"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSM-KD-vHI">
-                                            <rect key="frame" x="79" y="21" width="81" height="17"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Appearance:" id="Upi-Hs-bZ9">
-                                                <font key="font" usesAppearanceFont="YES"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9E1-6F-RRP">
-                                            <rect key="frame" x="172" y="19" width="200" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="roundRect" trackingMode="selectOne" id="lmg-4Q-6Wl">
-                                                <font key="font" metaFont="cellTitle"/>
-                                                <segments>
-                                                    <segment label="Light" width="65"/>
-                                                    <segment label="Dark" width="65" selected="YES" tag="1"/>
-                                                    <segment label="Auto" width="65"/>
-                                                </segments>
-                                                <connections>
-                                                    <action selector="segmentedControlValueChanged:" target="2G3-pC-M2U" id="l1m-1g-xNa"/>
-                                                </connections>
-                                            </segmentedCell>
-                                        </segmentedControl>
-                                    </subviews>
-                                </view>
-                            </box>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qmk-kD-jq1" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="228"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Ktr-Lg-9Ke"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="BilboAndRing"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="BilboDark"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9E1-6F-RRP">
+                                <rect key="frame" x="240" y="8" width="202" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="lmg-4Q-6Wl">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="Light" width="65"/>
+                                        <segment label="Dark" width="65" selected="YES" tag="1"/>
+                                        <segment label="Auto" width="65"/>
+                                    </segments>
+                                    <connections>
+                                        <action selector="segmentedControlValueChanged:" target="2G3-pC-M2U" id="l1m-1g-xNa"/>
+                                    </connections>
+                                </segmentedCell>
+                            </segmentedControl>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qmk-kD-jq1" secondAttribute="bottom" id="3ph-d5-fcd"/>
+                            <constraint firstItem="qmk-kD-jq1" firstAttribute="leading" secondItem="5RK-HS-UFI" secondAttribute="leading" id="LtI-3r-L1i"/>
+                            <constraint firstItem="qmk-kD-jq1" firstAttribute="top" secondItem="5RK-HS-UFI" secondAttribute="top" id="Q0p-wx-huc"/>
+                            <constraint firstAttribute="trailing" secondItem="9E1-6F-RRP" secondAttribute="trailing" constant="10" id="Syn-zC-QfX"/>
+                            <constraint firstAttribute="trailing" secondItem="qmk-kD-jq1" secondAttribute="trailing" id="quy-Zf-wQu"/>
+                            <constraint firstAttribute="bottom" secondItem="9E1-6F-RRP" secondAttribute="bottom" constant="10" id="tJT-1F-AvQ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="segmentedControl" destination="9E1-6F-RRP" id="qBA-yd-Mz7"/>
@@ -105,24 +75,11 @@
                 </viewController>
                 <customObject id="em9-f4-Owv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1326" y="34"/>
-        </scene>
-        <!--Advanced-->
-        <scene sceneID="q6p-YM-snG">
-            <objects>
-                <viewController title="Advanced" id="UCR-eO-0We" customClass="PreferencesViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="Nh3-Wv-0Im">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="201"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="bfs-vV-JVx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1326" y="321"/>
+            <point key="canvasLocation" x="671" y="253"/>
         </scene>
     </scenes>
     <resources>
-        <image name="NSAdvanced" width="32" height="32"/>
-        <image name="NSInfo" width="32" height="32"/>
+        <image name="BilboAndRing" width="720" height="304"/>
+        <image name="BilboDark" width="950" height="392"/>
     </resources>
 </document>

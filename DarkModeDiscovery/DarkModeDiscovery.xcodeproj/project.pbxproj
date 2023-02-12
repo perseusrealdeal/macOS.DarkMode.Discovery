@@ -10,14 +10,19 @@
 		4B0158E629103C0D009F1803 /* DarkModeDiscoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0158E529103C0D009F1803 /* DarkModeDiscoveryTests.swift */; };
 		4B0158ED29103C21009F1803 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F83AD288A6F99000D0A01 /* TestingAppDelegate.swift */; };
 		4B1E59EA28FBBC90006146E8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E59E928FBBC90006146E8 /* .swiftlint.yml */; };
-		4B26073D295DC238002813C6 /* GeneralPreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B26073C295DC238002813C6 /* GeneralPreferencesVC.swift */; };
+		4B26073D295DC238002813C6 /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B26073C295DC238002813C6 /* PreferencesVC.swift */; };
+		4B3A67E329658C0A0024077F /* CompanionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A67E129658C0A0024077F /* CompanionListViewController.swift */; };
+		4B3A67E72965932D0024077F /* CompanionCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A67E52965932D0024077F /* CompanionCollectionViewItem.swift */; };
+		4B3A67E82965932D0024077F /* CompanionCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B3A67E62965932D0024077F /* CompanionCollectionViewItem.xib */; };
 		4B44EDFB294661E80084C192 /* main.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B44EDFA294661E80084C192 /* main.yml */; };
 		4B44EE0129466A320084C192 /* DarkModeSwitching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */; };
-		4B44EE0229466A320084C192 /* PerseusDarkModeSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EDFF29466A320084C192 /* PerseusDarkModeSingle.swift */; };
 		4B44EE0329466A320084C192 /* PerseusUISystemKitSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */; };
 		4B6A98B6295C83E100965FAF /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6A98B5295C83E100965FAF /* Preferences.storyboard */; };
-		4B6A98B8295CADCA00965FAF /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A98B7295CADCA00965FAF /* PreferencesViewController.swift */; };
-		4B6A98BB295CAF3400965FAF /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A98B9295CAF3400965FAF /* PreferencesWindowController.swift */; };
+		4B6A98BB295CAF3400965FAF /* PreferencesWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A98B9295CAF3400965FAF /* PreferencesWC.swift */; };
+		4B6C3D2C29704130001299E6 /* ItemImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C3D2B29704130001299E6 /* ItemImageView.swift */; };
+		4B6F459C2965AD1200859528 /* CompanionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F459B2965AD1200859528 /* CompanionViewController.swift */; };
+		4B7DD3B0297D33B700172BD4 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DD3AF297D33B700172BD4 /* CustomColors.swift */; };
+		4B829B2729812D7F00FCE9FF /* TheMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B829B2629812D7F00FCE9FF /* TheMenu.swift */; };
 		E002B00F288E9A8D00E46356 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E002B00E288E9A8D00E46356 /* README.md */; };
 		E002B011288E9A9200E46356 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E002B010288E9A9200E46356 /* LICENSE */; };
 		E002B013288E9AAD00E46356 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E002B012288E9AAD00E46356 /* .gitignore */; };
@@ -28,7 +33,6 @@
 		E06FED13289A86ED00538B55 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FED12289A86ED00538B55 /* Race.swift */; };
 		E06FED15289A87ED00538B55 /* companions.json in Resources */ = {isa = PBXBuildFile; fileRef = E06FED14289A87ED00538B55 /* companions.json */; };
 		E0A2934C288E520000F467E8 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A2934B288E520000F467E8 /* MainWindowController.swift */; };
-		E0A2934E288E529600F467E8 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A2934D288E529600F467E8 /* MainWindow.swift */; };
 		E0A29350288E653800F467E8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A2934F288E653800F467E8 /* MainMenu.xib */; };
 		E0A29352288E657900F467E8 /* MainWindowController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A29351288E657900F467E8 /* MainWindowController.storyboard */; };
 		E0A29354288E70B200F467E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A29353288E70B200F467E8 /* AppDelegate.swift */; };
@@ -49,19 +53,24 @@
 		4B0158E529103C0D009F1803 /* DarkModeDiscoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeDiscoveryTests.swift; sourceTree = "<group>"; };
 		4B0158E729103C0D009F1803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B1E59E928FBBC90006146E8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .swiftlint.yml; path = DarkModeDiscovery/.swiftlint.yml; sourceTree = "<group>"; };
-		4B26073C295DC238002813C6 /* GeneralPreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesVC.swift; sourceTree = "<group>"; };
+		4B26073C295DC238002813C6 /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
+		4B3A67E129658C0A0024077F /* CompanionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionListViewController.swift; sourceTree = "<group>"; };
+		4B3A67E52965932D0024077F /* CompanionCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionCollectionViewItem.swift; sourceTree = "<group>"; };
+		4B3A67E62965932D0024077F /* CompanionCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanionCollectionViewItem.xib; sourceTree = "<group>"; };
 		4B44EDFA294661E80084C192 /* main.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.yml; path = ../.github/workflows/main.yml; sourceTree = "<group>"; };
 		4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkModeSwitching.swift; sourceTree = "<group>"; };
-		4B44EDFF29466A320084C192 /* PerseusDarkModeSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerseusDarkModeSingle.swift; sourceTree = "<group>"; };
 		4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerseusUISystemKitSingle.swift; sourceTree = "<group>"; };
 		4B55925828F7422400D38256 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B6A98B5295C83E100965FAF /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
-		4B6A98B7295CADCA00965FAF /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
-		4B6A98B9295CAF3400965FAF /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		4B6A98B9295CAF3400965FAF /* PreferencesWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWC.swift; sourceTree = "<group>"; };
+		4B6C3D2B29704130001299E6 /* ItemImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImageView.swift; sourceTree = "<group>"; };
+		4B6F459B2965AD1200859528 /* CompanionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionViewController.swift; sourceTree = "<group>"; };
+		4B7DD3AF297D33B700172BD4 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		4B829B2629812D7F00FCE9FF /* TheMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMenu.swift; sourceTree = "<group>"; };
 		E002B00E288E9A8D00E46356 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E002B010288E9A9200E46356 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E002B012288E9AAD00E46356 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
-		E00F837D288A4A04000D0A01 /* DarkModeDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkModeDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00F837D288A4A04000D0A01 /* Dark Mode Discovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Mode Discovery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00F8382288A4A04000D0A01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E00F8384288A4A0B000D0A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E00F8389288A4A0B000D0A01 /* DarkModeDiscovery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkModeDiscovery.entitlements; sourceTree = "<group>"; };
@@ -71,7 +80,6 @@
 		E06FED12289A86ED00538B55 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		E06FED14289A87ED00538B55 /* companions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = companions.json; sourceTree = "<group>"; };
 		E0A2934B288E520000F467E8 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
-		E0A2934D288E529600F467E8 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
 		E0A2934F288E653800F467E8 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		E0A29351288E657900F467E8 /* MainWindowController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainWindowController.storyboard; sourceTree = "<group>"; };
 		E0A29353288E70B200F467E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */,
-				4B44EDFF29466A320084C192 /* PerseusDarkModeSingle.swift */,
 				4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */,
 			);
 			path = FirstPartyCode;
@@ -127,11 +134,27 @@
 			isa = PBXGroup;
 			children = (
 				4B6A98B5295C83E100965FAF /* Preferences.storyboard */,
-				4B6A98B7295CADCA00965FAF /* PreferencesViewController.swift */,
-				4B6A98B9295CAF3400965FAF /* PreferencesWindowController.swift */,
-				4B26073C295DC238002813C6 /* GeneralPreferencesVC.swift */,
+				4B6A98B9295CAF3400965FAF /* PreferencesWC.swift */,
+				4B26073C295DC238002813C6 /* PreferencesVC.swift */,
 			);
 			path = Preferences;
+			sourceTree = "<group>";
+		};
+		4BD028FE295EF05800E294E9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E0A2934B288E520000F467E8 /* MainWindowController.swift */,
+				E00F8382288A4A04000D0A01 /* ViewController.swift */,
+				E0A2934F288E653800F467E8 /* MainMenu.xib */,
+				E0A29351288E657900F467E8 /* MainWindowController.storyboard */,
+				4B3A67E129658C0A0024077F /* CompanionListViewController.swift */,
+				4B3A67E52965932D0024077F /* CompanionCollectionViewItem.swift */,
+				4B3A67E62965932D0024077F /* CompanionCollectionViewItem.xib */,
+				4B6F459B2965AD1200859528 /* CompanionViewController.swift */,
+				4B6C3D2B29704130001299E6 /* ItemImageView.swift */,
+				4B829B2629812D7F00FCE9FF /* TheMenu.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		E00F8374288A4A04000D0A01 = {
@@ -151,7 +174,7 @@
 		E00F837E288A4A04000D0A01 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E00F837D288A4A04000D0A01 /* DarkModeDiscovery.app */,
+				E00F837D288A4A04000D0A01 /* Dark Mode Discovery.app */,
 				4B0158E329103C0D009F1803 /* DarkModeDiscoveryTests.xctest */,
 			);
 			name = Products;
@@ -175,6 +198,7 @@
 				E00F8389288A4A0B000D0A01 /* DarkModeDiscovery.entitlements */,
 				E00F8384288A4A0B000D0A01 /* Assets.xcassets */,
 				E0A29353288E70B200F467E8 /* AppDelegate.swift */,
+				4B7DD3AF297D33B700172BD4 /* CustomColors.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -182,12 +206,8 @@
 		E0A2934A288E517800F467E8 /* DemoContent */ = {
 			isa = PBXGroup;
 			children = (
+				4BD028FE295EF05800E294E9 /* Main */,
 				4B6A98B4295C7EB800965FAF /* Preferences */,
-				E0A2934B288E520000F467E8 /* MainWindowController.swift */,
-				E0A2934D288E529600F467E8 /* MainWindow.swift */,
-				E00F8382288A4A04000D0A01 /* ViewController.swift */,
-				E0A2934F288E653800F467E8 /* MainMenu.xib */,
-				E0A29351288E657900F467E8 /* MainWindowController.storyboard */,
 				E0A9D8B32895996100B78B21 /* Model */,
 			);
 			path = DemoContent;
@@ -239,7 +259,7 @@
 			);
 			name = DarkModeDiscovery;
 			productName = DarkModeDiscovery;
-			productReference = E00F837D288A4A04000D0A01 /* DarkModeDiscovery.app */;
+			productReference = E00F837D288A4A04000D0A01 /* Dark Mode Discovery.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -295,6 +315,7 @@
 			files = (
 				4B1E59EA28FBBC90006146E8 /* .swiftlint.yml in Resources */,
 				E002B011288E9A9200E46356 /* LICENSE in Resources */,
+				4B3A67E82965932D0024077F /* CompanionCollectionViewItem.xib in Resources */,
 				E002B013288E9AAD00E46356 /* .gitignore in Resources */,
 				4B6A98B6295C83E100965FAF /* Preferences.storyboard in Resources */,
 				E00F8385288A4A0B000D0A01 /* Assets.xcassets in Resources */,
@@ -342,19 +363,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0A2934E288E529600F467E8 /* MainWindow.swift in Sources */,
 				4B44EE0129466A320084C192 /* DarkModeSwitching.swift in Sources */,
-				4B44EE0229466A320084C192 /* PerseusDarkModeSingle.swift in Sources */,
 				E06FED13289A86ED00538B55 /* Race.swift in Sources */,
 				E01D2D3A289A76A6009B932F /* Companion.swift in Sources */,
 				4B44EE0329466A320084C192 /* PerseusUISystemKitSingle.swift in Sources */,
-				4B6A98BB295CAF3400965FAF /* PreferencesWindowController.swift in Sources */,
+				4B6A98BB295CAF3400965FAF /* PreferencesWC.swift in Sources */,
+				4B6C3D2C29704130001299E6 /* ItemImageView.swift in Sources */,
 				E00F8383288A4A04000D0A01 /* ViewController.swift in Sources */,
+				4B3A67E72965932D0024077F /* CompanionCollectionViewItem.swift in Sources */,
 				E00F83AC288A4A64000D0A01 /* main.swift in Sources */,
-				4B26073D295DC238002813C6 /* GeneralPreferencesVC.swift in Sources */,
+				4B7DD3B0297D33B700172BD4 /* CustomColors.swift in Sources */,
+				4B26073D295DC238002813C6 /* PreferencesVC.swift in Sources */,
+				4B6F459C2965AD1200859528 /* CompanionViewController.swift in Sources */,
 				E0A29354288E70B200F467E8 /* AppDelegate.swift in Sources */,
 				E0A2934C288E520000F467E8 /* MainWindowController.swift in Sources */,
-				4B6A98B8295CADCA00965FAF /* PreferencesViewController.swift in Sources */,
+				4B829B2729812D7F00FCE9FF /* TheMenu.swift in Sources */,
+				4B3A67E329658C0A0024077F /* CompanionListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,11 +409,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.DarkModeDiscoveryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarkModeDiscovery.app/Contents/MacOS/DarkModeDiscovery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dark Mode Discovery.app/Contents/MacOS/Dark Mode Discovery";
 			};
 			name = Debug;
 		};
@@ -409,11 +433,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.DarkModeDiscoveryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarkModeDiscovery.app/Contents/MacOS/DarkModeDiscovery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dark Mode Discovery.app/Contents/MacOS/Dark Mode Discovery";
 			};
 			name = Release;
 		};
@@ -468,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -524,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -538,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = DarkModeDiscovery/Configuration/DarkModeDiscovery.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -549,9 +574,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.lab.macos.DarkModeDiscovery;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dark Mode Discovery";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
@@ -561,6 +586,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = DarkModeDiscovery/Configuration/DarkModeDiscovery.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -573,9 +599,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.lab.macos.DarkModeDiscovery;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dark Mode Discovery";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};

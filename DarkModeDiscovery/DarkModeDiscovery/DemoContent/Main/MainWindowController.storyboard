@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zEn-H0-fel">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="MXA-Sv-x0g">
+            <objects>
+                <windowController id="zEn-H0-fel" customClass="MainWindowController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="macOS.DarkMode.Discovery" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="t5D-0x-IF4">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+                        <rect key="contentRect" x="99" y="99" width="480" height="500"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
+                        <value key="minSize" type="size" width="480" height="500"/>
+                        <view key="contentView" id="GXa-t6-a7S">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="500"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="zEn-H0-fel" id="exu-fA-oL0"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="kd7-lM-5g6" kind="relationship" relationship="window.shadowedContentViewController" id="DtB-hD-eXG"/>
+                    </connections>
+                </windowController>
+                <customObject id="4fW-t7-69E" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="-301"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NpT-E3-ygb">
+            <objects>
+                <viewController id="kd7-lM-5g6" customClass="ViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Wzp-zk-jds">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6I-Mb-bdx">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ggy-pj-ydL">
+                                        <rect key="frame" x="0.0" y="150" width="450" height="100"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="pch-xV-LUR" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="450" height="100"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="Mol-TW-rN3"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="Erebor"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="DwarvesAndHiddenDoor"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="centerY" secondItem="ggy-pj-ydL" secondAttribute="centerY" id="49R-kT-shj"/>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="height" secondItem="ggy-pj-ydL" secondAttribute="height" id="AxD-dD-CkH"/>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="width" secondItem="ggy-pj-ydL" secondAttribute="width" id="PBe-yA-LZj"/>
+                                            <constraint firstItem="pch-xV-LUR" firstAttribute="centerX" secondItem="ggy-pj-ydL" secondAttribute="centerX" id="fvI-Te-MmL"/>
+                                        </constraints>
+                                    </customView>
+                                    <splitView dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-cM-tzd">
+                                        <rect key="frame" x="0.0" y="50" width="450" height="100"/>
+                                        <subviews>
+                                            <containerView id="4U9-q4-8MF">
+                                                <rect key="frame" x="0.0" y="0.0" width="225" height="100"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="1lV-dv-mcf"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="265" id="sbg-cl-pU1"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="gk4-fw-Opv" kind="embed" identifier="" id="s03-Pr-et1"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView id="o44-AS-hZD">
+                                                <rect key="frame" x="226" y="0.0" width="224" height="100"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="pSx-H5-KdC"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="54o-HC-niy" kind="embed" identifier="" id="i35-C1-wD2"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <holdingPriorities>
+                                            <real value="250"/>
+                                            <real value="250"/>
+                                        </holdingPriorities>
+                                    </splitView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="dXU-fX-v5M">
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="50"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mj2-Gc-sLl" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="450" height="50"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="uaX-XN-hFq"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="EreborInside"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="DragonAndBilbo"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="mj2-Gc-sLl" firstAttribute="top" secondItem="dXU-fX-v5M" secondAttribute="top" id="BJ6-CX-yT3"/>
+                                            <constraint firstItem="mj2-Gc-sLl" firstAttribute="leading" secondItem="dXU-fX-v5M" secondAttribute="leading" id="D90-Jc-o5X"/>
+                                            <constraint firstAttribute="trailing" secondItem="mj2-Gc-sLl" secondAttribute="trailing" id="DKM-aU-XPH"/>
+                                            <constraint firstAttribute="bottom" secondItem="mj2-Gc-sLl" secondAttribute="bottom" id="PuL-T1-pBj"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ggy-pj-ydL" firstAttribute="width" secondItem="g6I-Mb-bdx" secondAttribute="width" id="EOJ-fI-Ifx"/>
+                                    <constraint firstItem="dXU-fX-v5M" firstAttribute="width" secondItem="g6I-Mb-bdx" secondAttribute="width" id="cSt-w2-55L"/>
+                                    <constraint firstItem="2EH-cM-tzd" firstAttribute="height" secondItem="g6I-Mb-bdx" secondAttribute="height" multiplier="0.4" id="eTi-Wq-VHS"/>
+                                    <constraint firstItem="ggy-pj-ydL" firstAttribute="height" secondItem="g6I-Mb-bdx" secondAttribute="height" multiplier="0.4" id="hOq-at-wBn"/>
+                                    <constraint firstItem="2EH-cM-tzd" firstAttribute="width" secondItem="g6I-Mb-bdx" secondAttribute="width" id="uko-GV-xfY"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="g6I-Mb-bdx" secondAttribute="trailing" id="Xqq-2Q-uoO"/>
+                            <constraint firstItem="g6I-Mb-bdx" firstAttribute="top" secondItem="Wzp-zk-jds" secondAttribute="top" id="eiU-Sr-XKg"/>
+                            <constraint firstItem="g6I-Mb-bdx" firstAttribute="leading" secondItem="Wzp-zk-jds" secondAttribute="leading" id="gwg-eX-CK7"/>
+                            <constraint firstAttribute="bottom" secondItem="g6I-Mb-bdx" secondAttribute="bottom" id="zVg-ad-kQf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftSplitWidthConstraint" destination="1lV-dv-mcf" id="Euz-86-V0W"/>
+                        <outlet property="splitView" destination="2EH-cM-tzd" id="aab-EL-TmV"/>
+                    </connections>
+                </viewController>
+                <customObject id="E1e-1t-HN6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="373"/>
+        </scene>
+        <!--Companion List View Controller-->
+        <scene sceneID="iCx-tK-FpQ">
+            <objects>
+                <viewController id="gk4-fw-Opv" customClass="CompanionListViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="DrT-Ou-tXg">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wLm-68-HNO" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="MjK-VM-7uu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="Heart"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="Heart"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFillClipToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oe2-DN-uNG">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="XTU-e3-VL1">
+                                    <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView selectable="YES" id="RWT-Hd-GJ4">
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" id="ONr-gx-sId">
+                                                <size key="itemSize" width="130" height="160"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="gk4-fw-Opv" id="SfG-Cf-1zn"/>
+                                                <outlet property="delegate" destination="gk4-fw-Opv" id="EQW-pf-gYz"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="sBS-IT-gd3">
+                                    <rect key="frame" x="-100" y="-100" width="233" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="fBE-9x-zZB">
+                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oe2-DN-uNG" secondAttribute="trailing" id="0JN-Pu-Mth"/>
+                            <constraint firstAttribute="bottom" secondItem="oe2-DN-uNG" secondAttribute="bottom" id="7V8-cK-XMH"/>
+                            <constraint firstItem="oe2-DN-uNG" firstAttribute="top" secondItem="DrT-Ou-tXg" secondAttribute="top" id="LoX-7j-ECz"/>
+                            <constraint firstItem="wLm-68-HNO" firstAttribute="leading" secondItem="DrT-Ou-tXg" secondAttribute="leading" id="QPv-Tp-Saw"/>
+                            <constraint firstAttribute="bottom" secondItem="wLm-68-HNO" secondAttribute="bottom" id="ZfY-Ri-e4B"/>
+                            <constraint firstAttribute="trailing" secondItem="wLm-68-HNO" secondAttribute="trailing" id="agU-a6-plM"/>
+                            <constraint firstItem="wLm-68-HNO" firstAttribute="top" secondItem="DrT-Ou-tXg" secondAttribute="top" id="ile-3t-wNQ"/>
+                            <constraint firstItem="oe2-DN-uNG" firstAttribute="leading" secondItem="DrT-Ou-tXg" secondAttribute="leading" id="ldf-os-NSJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="RWT-Hd-GJ4" id="LTj-oQ-qlV"/>
+                    </connections>
+                </viewController>
+                <customObject id="l9l-sq-Cqj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="825"/>
+        </scene>
+        <!--Companion View Controller-->
+        <scene sceneID="0lK-y3-FRD">
+            <objects>
+                <viewController id="54o-HC-niy" customClass="CompanionViewController" customModule="DarkModeDiscovery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="t5z-Ty-2yq">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5au-tj-4bR" customClass="DarkModeImageView" customModule="DarkModeDiscovery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="xzx-Gy-l7r"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UJQ-HS-z4v">
+                                <rect key="frame" x="18" y="230" width="254" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9wS-Qs-wwW"/>
+                                    <constraint firstAttribute="height" constant="50" id="tZe-yt-JhS"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="NameValue" id="kd0-HY-3yf">
+                                    <font key="font" metaFont="system" size="30"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H0z-aP-l2R">
+                                <rect key="frame" x="28" y="205" width="64" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="HU4-dv-2Py"/>
+                                    <constraint firstAttribute="width" constant="60" id="fZj-ea-btX"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Age:" id="kIl-pk-XqL">
+                                    <font key="font" metaFont="system" size="21"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XwX-Wj-ewK">
+                                <rect key="frame" x="88" y="205" width="103" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="2eE-eg-cde"/>
+                                    <constraint firstAttribute="height" constant="25" id="PMm-wP-Ocb"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="AgeValue" id="GyY-49-UmA">
+                                    <font key="font" metaFont="system" size="21"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="t2G-f0-hwK">
+                                <rect key="frame" x="28" y="170" width="64" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="XGW-KO-cq6"/>
+                                    <constraint firstAttribute="height" constant="25" id="dGD-yZ-dqE"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Race:" id="LEw-1h-MtG">
+                                    <font key="font" metaFont="system" size="21"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ovl-7B-sRD">
+                                <rect key="frame" x="88" y="170" width="103" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Wo2-KG-Hxe"/>
+                                    <constraint firstAttribute="width" constant="99" id="pCE-Ph-WPB"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="RaceValue" id="ZGz-xO-afF">
+                                    <font key="font" metaFont="system" size="21"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROl-j3-hCf">
+                                <rect key="frame" x="30" y="10" width="315" height="150"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="VIP-te-TPG">
+                                    <rect key="frame" x="0.0" y="0.0" width="315" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" id="O2l-r0-zBr">
+                                            <rect key="frame" x="0.0" y="0.0" width="315" height="150"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="315" height="150"/>
+                                            <size key="maxSize" width="450" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="L5R-g5-gzl">
+                                    <rect key="frame" x="-100" y="-100" width="100" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="oHO-tt-fGB">
+                                    <rect key="frame" x="252" y="2" width="16" height="146"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5au-tj-4bR" firstAttribute="top" secondItem="t5z-Ty-2yq" secondAttribute="top" id="0SJ-Ev-XX6"/>
+                            <constraint firstItem="t2G-f0-hwK" firstAttribute="leading" secondItem="H0z-aP-l2R" secondAttribute="leading" id="2WO-Tn-aUv"/>
+                            <constraint firstItem="H0z-aP-l2R" firstAttribute="leading" secondItem="UJQ-HS-z4v" secondAttribute="leading" constant="10" id="DSs-uR-GWs"/>
+                            <constraint firstAttribute="bottom" secondItem="5au-tj-4bR" secondAttribute="bottom" id="FZx-U2-Aoc"/>
+                            <constraint firstItem="5au-tj-4bR" firstAttribute="leading" secondItem="t5z-Ty-2yq" secondAttribute="leading" id="GMC-eB-6y6"/>
+                            <constraint firstItem="ROl-j3-hCf" firstAttribute="width" secondItem="t5z-Ty-2yq" secondAttribute="width" multiplier="0.7" id="J45-bz-ZWJ"/>
+                            <constraint firstItem="ROl-j3-hCf" firstAttribute="leading" secondItem="t2G-f0-hwK" secondAttribute="leading" id="K99-fN-fc0"/>
+                            <constraint firstItem="H0z-aP-l2R" firstAttribute="top" secondItem="UJQ-HS-z4v" secondAttribute="bottom" id="Kj1-Gj-GVa"/>
+                            <constraint firstItem="UJQ-HS-z4v" firstAttribute="top" secondItem="t5z-Ty-2yq" secondAttribute="top" constant="20" id="NFU-JO-djf"/>
+                            <constraint firstAttribute="trailing" secondItem="5au-tj-4bR" secondAttribute="trailing" id="Ptc-QF-nsq"/>
+                            <constraint firstAttribute="bottom" secondItem="ROl-j3-hCf" secondAttribute="bottom" constant="10" id="Uns-bP-AAc"/>
+                            <constraint firstItem="XwX-Wj-ewK" firstAttribute="leading" secondItem="H0z-aP-l2R" secondAttribute="trailing" id="VR5-5b-bK8"/>
+                            <constraint firstItem="Ovl-7B-sRD" firstAttribute="top" secondItem="XwX-Wj-ewK" secondAttribute="bottom" constant="10" id="ZHr-WS-rZX"/>
+                            <constraint firstItem="ROl-j3-hCf" firstAttribute="top" secondItem="t2G-f0-hwK" secondAttribute="bottom" constant="10" id="dUb-et-Kht"/>
+                            <constraint firstItem="XwX-Wj-ewK" firstAttribute="top" secondItem="UJQ-HS-z4v" secondAttribute="bottom" id="m9H-AK-B1s"/>
+                            <constraint firstItem="Ovl-7B-sRD" firstAttribute="leading" secondItem="t2G-f0-hwK" secondAttribute="trailing" id="rrA-8t-Q33"/>
+                            <constraint firstItem="UJQ-HS-z4v" firstAttribute="leading" secondItem="t5z-Ty-2yq" secondAttribute="leading" constant="20" id="s7W-xp-8iK"/>
+                            <constraint firstItem="t2G-f0-hwK" firstAttribute="top" secondItem="H0z-aP-l2R" secondAttribute="bottom" constant="10" id="tbt-05-UWX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="H0z-aP-l2R" id="BDf-dq-h8A"/>
+                        <outlet property="ageValue" destination="XwX-Wj-ewK" id="E6A-5J-drv"/>
+                        <outlet property="bioTextView" destination="O2l-r0-zBr" id="Fb0-RK-7Ux"/>
+                        <outlet property="imageView" destination="5au-tj-4bR" id="GiW-GX-LHu"/>
+                        <outlet property="nameValue" destination="UJQ-HS-z4v" id="O0x-ta-RTi"/>
+                        <outlet property="raceLabel" destination="t2G-f0-hwK" id="FSc-A8-fdE"/>
+                        <outlet property="raceValue" destination="Ovl-7B-sRD" id="BZk-O1-db5"/>
+                    </connections>
+                </viewController>
+                <customObject id="MSN-mH-FM6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473" y="373"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DragonAndBilbo" width="1845" height="622"/>
+        <image name="DwarvesAndHiddenDoor" width="1648" height="1080"/>
+        <image name="Erebor" width="1270" height="293"/>
+        <image name="EreborInside" width="2560" height="1125"/>
+        <image name="Heart" width="576" height="800"/>
+    </resources>
+</document>
