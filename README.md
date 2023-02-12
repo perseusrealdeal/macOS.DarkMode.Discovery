@@ -5,6 +5,7 @@
 [![Platform macOS](https://img.shields.io/badge/Platform-macOS%2010.11+-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
 [![Xcode 10.1](https://img.shields.io/badge/Xcode-10.1+-red.svg)](https://en.wikipedia.org/wiki/Xcode)
 [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-red.svg)](https://docs.swift.org/swift-book/RevisionHistory/RevisionHistory.html)
+[![License](http://img.shields.io/:License-MIT-blue.svg)](/LICENSE)
 
 ## Dependencies
 
@@ -44,7 +45,7 @@ Copyright © 7530 - 7531 PerseusRealDeal
 
 Have a look at [LICENSE](/LICENSE) for details.
 
-TODO: Add some special words about app's theme images and text that had been found on the seas of Internet.
+TODO: Add some special words about app's theme images and text that were found on the seas of Internet.
 
 ## Author and Acknowledgments
 
