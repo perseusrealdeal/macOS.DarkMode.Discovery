@@ -16,10 +16,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        #if DEBUG && true
-        print(">> Launching with business matter purpose")
-        print(">> [\(type(of: self))]." + #function)
-        #endif
+
+        PerseusLogger.message("Launching with business matter purpose", .info)
+        PerseusLogger.message("[\(type(of: self))].\(#function)")
 
         AppearanceService.recalculateStyleIfNeeded()
     }

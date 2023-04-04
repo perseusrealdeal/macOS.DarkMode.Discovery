@@ -14,6 +14,7 @@
 		4B3A67E329658C0A0024077F /* CompanionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A67E129658C0A0024077F /* CompanionListViewController.swift */; };
 		4B3A67E72965932D0024077F /* CompanionCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A67E52965932D0024077F /* CompanionCollectionViewItem.swift */; };
 		4B3A67E82965932D0024077F /* CompanionCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B3A67E62965932D0024077F /* CompanionCollectionViewItem.xib */; };
+		4B41CA3E29DC638300FF98BB /* PerseusLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B41CA3D29DC638300FF98BB /* PerseusLogger.swift */; };
 		4B44EDFB294661E80084C192 /* main.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B44EDFA294661E80084C192 /* main.yml */; };
 		4B44EE0129466A320084C192 /* DarkModeSwitching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */; };
 		4B44EE0329466A320084C192 /* PerseusUISystemKitSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */; };
@@ -57,6 +58,7 @@
 		4B3A67E129658C0A0024077F /* CompanionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionListViewController.swift; sourceTree = "<group>"; };
 		4B3A67E52965932D0024077F /* CompanionCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionCollectionViewItem.swift; sourceTree = "<group>"; };
 		4B3A67E62965932D0024077F /* CompanionCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanionCollectionViewItem.xib; sourceTree = "<group>"; };
+		4B41CA3D29DC638300FF98BB /* PerseusLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerseusLogger.swift; sourceTree = "<group>"; };
 		4B44EDFA294661E80084C192 /* main.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.yml; path = ../.github/workflows/main.yml; sourceTree = "<group>"; };
 		4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkModeSwitching.swift; sourceTree = "<group>"; };
 		4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerseusUISystemKitSingle.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				4B44EDFE29466A320084C192 /* DarkModeSwitching.swift */,
 				4B44EE0029466A320084C192 /* PerseusUISystemKitSingle.swift */,
+				4B41CA3D29DC638300FF98BB /* PerseusLogger.swift */,
 			);
 			path = FirstPartyCode;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				E00F83AC288A4A64000D0A01 /* main.swift in Sources */,
 				4B7DD3B0297D33B700172BD4 /* CustomColors.swift in Sources */,
 				4B26073D295DC238002813C6 /* PreferencesVC.swift in Sources */,
+				4B41CA3E29DC638300FF98BB /* PerseusLogger.swift in Sources */,
 				4B6F459C2965AD1200859528 /* CompanionViewController.swift in Sources */,
 				E0A29354288E70B200F467E8 /* AppDelegate.swift in Sources */,
 				E0A2934C288E520000F467E8 /* MainWindowController.swift in Sources */,
@@ -396,13 +400,13 @@
 		4B0158EB29103C0D009F1803 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6DRVN4F88C;
 				INFOPLIST_FILE = DarkModeDiscoveryTests/Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,13 +424,13 @@
 		4B0158EC29103C0D009F1803 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6DRVN4F88C;
 				INFOPLIST_FILE = DarkModeDiscoveryTests/Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,7 +571,6 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6DRVN4F88C;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/DarkModeDiscovery/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -576,6 +579,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.lab.macos.DarkModeDiscovery;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "Dark Mode Discovery";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -591,7 +595,6 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6DRVN4F88C;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/DarkModeDiscovery/Configuration/Info.plist";
@@ -601,6 +604,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.lab.macos.DarkModeDiscovery;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "Dark Mode Discovery";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

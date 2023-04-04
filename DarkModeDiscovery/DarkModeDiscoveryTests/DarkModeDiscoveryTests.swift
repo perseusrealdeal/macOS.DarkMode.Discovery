@@ -12,8 +12,11 @@
 //
 
 import XCTest
+@testable import DarkModeDiscovery
 
 class DarkModeDiscoveryTests: XCTestCase {
+
     // func test_zero() { XCTFail("Tests not yet implemented in \(type(of: self)).") }
+
     func test_the_first_success() { XCTAssertTrue(true, "It's done!") }
 }
