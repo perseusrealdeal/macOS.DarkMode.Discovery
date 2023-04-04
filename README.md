@@ -1,7 +1,7 @@
 # macos.darkmode.discovery
 
 [![Actions Status](https://github.com/perseusrealdeal/macos.darkmode.discovery/actions/workflows/main.yml/badge.svg)](https://github.com/perseusrealdeal/macos.darkmode.discovery/actions)
-![Version](https://img.shields.io/badge/App_Version-1.0-green.svg)
+![Version](https://img.shields.io/badge/App_Version-1.1-green.svg)
 [![Platform macOS](https://img.shields.io/badge/Platform-macOS%2010.11+-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
 [![Xcode 10.1](https://img.shields.io/badge/Xcode-10.1+-red.svg)](https://en.wikipedia.org/wiki/Xcode)
 [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-red.svg)](https://docs.swift.org/swift-book/RevisionHistory/RevisionHistory.html)
@@ -9,8 +9,8 @@
 
 ## Dependencies
 
-[![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-1.1.3-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode/tree/1.1.3)
-[![PerseusUISystemKit](http://img.shields.io/:PerseusUISystemKit-1.1.2-green.svg)](https://github.com/perseusrealdeal/PerseusUISystemKit/tree/1.1.2)
+[![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-1.1.4-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode/tree/1.1.4)
+[![PerseusUISystemKit](http://img.shields.io/:PerseusUISystemKit-1.1.3-green.svg)](https://github.com/perseusrealdeal/PerseusUISystemKit/tree/1.1.3)
 
 # In brief
 
@@ -20,15 +20,17 @@
 
 # Requirements
 
-- Xcode 10.1+ (macOS High Sierra - 10.13.6)
+- [macOS 10.13.6+](https://apps.apple.com/us/app/macos-high-sierra/id1246284741?ls=1)
+- [Xcode 10.1+](https://stackoverflow.com/questions/10335747/how-to-download-xcode-dmg-or-xip-file)
 - Swift 4.2+
 - AppKit SDK
 
 # First-party software
 
-- [Perseus Dark Mode](https://github.com/perseusrealdeal/PerseusDarkMode.git) / [1.1.3](https://github.com/perseusrealdeal/perseusdarkmode/releases/tag/1.1.3)
-- [Perseus UI System Kit](https://github.com/perseusrealdeal/PerseusUISystemKit.git) / [1.1.2](https://github.com/perseusrealdeal/perseusuisystemkit/releases/tag/1.1.2)
+- [Perseus Dark Mode](https://github.com/perseusrealdeal/PerseusDarkMode.git) / [1.1.4](https://github.com/perseusrealdeal/perseusdarkmode/releases/tag/1.1.4)
+- [Perseus UI System Kit](https://github.com/perseusrealdeal/PerseusUISystemKit.git) / [1.1.3](https://github.com/perseusrealdeal/perseusuisystemkit/releases/tag/1.1.3)
 - [Dark Mode switching functions](https://gist.github.com/perseusrealdeal/11b1bab47f13134832b859f49d9af706)
+- [PerseusLogger](https://gist.github.com/perseusrealdeal/df456a9825fcface44eca738056eb6d5)
 
 # Third-party software
 
