@@ -12,6 +12,8 @@
 //
 
 import AppKit
+import PerseusDarkMode
+import PerseusUISystemKit
 
 public protocol CustomColorsProtocol {
 

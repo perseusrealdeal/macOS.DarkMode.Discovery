@@ -40,6 +40,8 @@ import UIKit
 import Cocoa
 #endif
 
+import PerseusDarkMode
+
 // Uncomment the instruction if added Perseus Dark Mode via package manager.
 // import PerseusDarkMode
 
