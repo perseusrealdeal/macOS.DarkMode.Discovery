@@ -40,7 +40,7 @@ class CompanionListViewController: NSViewController {
     private func reloadCompanionListAndSelectTheFirstIfNecessary() {
 
         if companionList.isEmpty {
-            PerseusLogger.message("[\(type(of: self))].\(#function), it's empty!")
+            log.message("[\(type(of: self))].\(#function), it's empty!")
             return
         }
 
