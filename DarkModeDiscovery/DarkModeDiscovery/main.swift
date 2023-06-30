@@ -17,6 +17,13 @@ import Cocoa
 
 log.level = .info
 
+// PerseusDarkMode logger
+
+import class PerseusDarkMode.PerseusLogger
+typealias PerseusDarkModeLogger = PerseusDarkMode.PerseusLogger
+
+PerseusDarkModeLogger.turned = .off
+
 // MARK: - Construct the app's top elements
 
 let app = NSApplication.shared
