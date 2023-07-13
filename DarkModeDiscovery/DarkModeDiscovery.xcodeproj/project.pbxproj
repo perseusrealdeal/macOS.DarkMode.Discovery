@@ -653,7 +653,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/perseusrealdeal/PerseusUISystemKit";
 			requirement = {
-				branch = hotfixes;
+				branch = 1.1.4;
 				kind = branch;
 			};
 		};
