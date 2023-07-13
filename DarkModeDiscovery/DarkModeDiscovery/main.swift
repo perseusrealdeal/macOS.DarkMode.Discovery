@@ -24,6 +24,13 @@ typealias PerseusDarkModeLogger = PerseusDarkMode.PerseusLogger
 
 PerseusDarkModeLogger.turned = .off
 
+// PerseusUISystemKit logger
+
+import class PerseusUISystemKit.PerseusLogger
+typealias PerseusUISystemKitLogger = PerseusUISystemKit.PerseusLogger
+
+PerseusUISystemKitLogger.turned = .off
+
 // MARK: - Construct the app's top elements
 
 let app = NSApplication.shared
