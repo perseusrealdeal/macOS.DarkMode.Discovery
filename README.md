@@ -1,7 +1,7 @@
 # macos.darkmode.discovery
 
 [![Actions Status](https://github.com/perseusrealdeal/macos.darkmode.discovery/actions/workflows/main.yml/badge.svg)](https://github.com/perseusrealdeal/macos.darkmode.discovery/actions)
-![Version](https://img.shields.io/badge/App_Version-1.1-green.svg)
+![Version](https://img.shields.io/badge/App_Version-1.2-green.svg)
 [![Platform macOS](https://img.shields.io/badge/Platform-macOS%2010.11+-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
 [![Xcode 10.1](https://img.shields.io/badge/Xcode-10.1+-red.svg)](https://en.wikipedia.org/wiki/Xcode)
 [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-red.svg)](https://docs.swift.org/swift-book/RevisionHistory/RevisionHistory.html)
@@ -9,8 +9,8 @@
 
 ## Dependencies
 
-[![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-1.1.4-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode/tree/1.1.4)
-[![PerseusUISystemKit](http://img.shields.io/:PerseusUISystemKit-1.1.3-green.svg)](https://github.com/perseusrealdeal/PerseusUISystemKit/tree/1.1.3)
+[![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-1.1.5-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode/tree/1.1.5)
+[![PerseusUISystemKit](http://img.shields.io/:PerseusUISystemKit-1.1.4-green.svg)](https://github.com/perseusrealdeal/PerseusUISystemKit/tree/1.1.4)
 
 # In brief
 
@@ -27,8 +27,8 @@
 
 # First-party software
 
-- [Perseus Dark Mode](https://github.com/perseusrealdeal/PerseusDarkMode.git) / [1.1.4](https://github.com/perseusrealdeal/perseusdarkmode/releases/tag/1.1.4)
-- [Perseus UI System Kit](https://github.com/perseusrealdeal/PerseusUISystemKit.git) / [1.1.3](https://github.com/perseusrealdeal/perseusuisystemkit/releases/tag/1.1.3)
+- [Perseus Dark Mode](https://github.com/perseusrealdeal/PerseusDarkMode.git) / [1.1.5](https://github.com/perseusrealdeal/perseusdarkmode/releases/tag/1.1.5)
+- [Perseus UI System Kit](https://github.com/perseusrealdeal/PerseusUISystemKit.git) / [1.1.4](https://github.com/perseusrealdeal/perseusuisystemkit/releases/tag/1.1.4)
 - [Dark Mode switching functions](https://gist.github.com/perseusrealdeal/11b1bab47f13134832b859f49d9af706)
 - [PerseusLogger](https://gist.github.com/perseusrealdeal/df456a9825fcface44eca738056eb6d5)
 
@@ -36,21 +36,21 @@
 
 - [SwiftLint](https://github.com/realm/SwiftLint) / [0.31.0: Busy Laundromat](https://github.com/realm/SwiftLint/releases/tag/0.31.0) for macOS High Sierra
 
-## License MIT
+# License MIT
 
-Copyright © 7530 - 7531 Mikhail Zhigulin of Novosibirsk
+Copyright © 7530 - 7531 Mikhail Zhigulin of Novosibirsk.
 
-Copyright © 7530 - 7531 PerseusRealDeal
+Copyright © 7530 - 7531 PerseusRealDeal.
 
 - The year starts from the creation of the world according to a Slavic calendar.
 - September, the 1st of Slavic year.
 
-Have a look at [LICENSE](/LICENSE) for details.
+[LICENSE](/LICENSE) for details.
 
-TODO: Add some special words about app's theme images and text that were found on the seas of Internet.
+***TODO:*** Add some special words about app's theme images and text that were found on the seas of Internet.
 
-## Author and Acknowledgments
+# Author
 
-This app called as `DarkModeDiscovery` was written at Novosibirsk by Mikhail Zhigulin i.e. me, mzhigulin@gmail.com.
+> This app called as `DarkModeDiscovery` was written at Novosibirsk by Mikhail Zhigulin i.e. me, mzhigulin@gmail.com.
 
 > Mostly I'd like thank my lovely parents for supporting me in all my ways.
